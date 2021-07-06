@@ -4,6 +4,10 @@ import "./App.css";
 // import slider1 from "./assets/slider1.jpg";
 
 import Home from "./component/home/Home";
+import MenuList from "./component/menuList/MenuList";
+
+let spanishList = ["alimentos", "bebidas", "vinos"];
+let englishList = ["food", "drinks", "wines"];
 
 function App() {
 	const [spanish, setSpanish] = useState(false);
@@ -31,18 +35,10 @@ function App() {
 		return <Home handleEnglish={handleEnglish} handleSpanish={handleSpanish} />;
 	}
 	if (spanish) {
-		return (
-			<div>
-				<h1>menu en spañol</h1>
-			</div>
-		);
+		return <MenuList list={spanishList} />;
 	}
-	if (handleEnglish) {
-		return (
-			<div>
-				<h1>menu en ingles</h1>
-			</div>
-		);
+	if (english) {
+		return <MenuList list={englishList} />;
 	}
 }
 
