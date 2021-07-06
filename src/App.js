@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import logo from "./assets/logo_mia_by_selina.png";
-import slider1 from "./assets/slider1.jpg";
+// import logo from "./assets/logo_mia_by_selina.png";
+// import slider1 from "./assets/slider1.jpg";
+
+import Home from "./component/home/Home";
 
 function App() {
 	const [spanish, setSpanish] = useState(false);
@@ -25,25 +27,23 @@ function App() {
 		}
 	};
 
-	return (
-		<div className='app'>
-			<figure className='logo_container'>
-				<img src={logo} alt='logo' />
-			</figure>
-
-			<div className='slider_container'>
-				<img src={slider1} alt='happy hour' />
+	if (!spanish && !english) {
+		return <Home handleEnglish={handleEnglish} handleSpanish={handleSpanish} />;
+	}
+	if (spanish) {
+		return (
+			<div>
+				<h1>menu en spañol</h1>
 			</div>
-			<div className='language_selector'>
-				<button className='btn' onClick={handleEnglish}>
-					Ingles / English
-				</button>
-				<button className='btn' onClick={handleSpanish}>
-					Español /Spanish
-				</button>
+		);
+	}
+	if (handleEnglish) {
+		return (
+			<div>
+				<h1>menu en ingles</h1>
 			</div>
-		</div>
-	);
+		);
+	}
 }
 
 export default App;
