@@ -1,20 +1,35 @@
+.menuList_imgContainer {
+	width: 100px;
+	margin: 10px auto;
+}
+
+.menuList_imgContainer img {
+	width: 100%;
+}
+
 .menuList_btnContainer {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	margin: 0px auto;
-	border: 1px solid red;
-	height: 320px;
-	width: 200px;
+	/* border: 1px solid red; */
+	/* height: 320px; */
+	width: 150px;
 }
 
 .menuList_btnContainer button {
-	font-size: 20px;
+	margin: 10px 0px;
+	font-size: 15px;
 	border-radius: 15px;
 	border-style: none;
-	height: 40px;
+	height: 35px;
 }
 
-.alimentos_container {
+.alimentos_active {
+	display: flex;
+	flex-direction: column;
+}
+
+.alimentos_hidden {
 	display: none;
 }

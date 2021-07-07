@@ -1,0 +1,7 @@
+.desserts_imgContainer {
+	min-width: 300px;
+}
+
+.desserts_imgContainer img {
+	width: 100%;
+}

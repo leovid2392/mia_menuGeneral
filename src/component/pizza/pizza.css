@@ -1,0 +1,8 @@
+.pizzaImg_container {
+	min-width: 300px;
+	margin: 10px auto;
+}
+
+.pizzaImg_container img {
+	width: 100%;
+}

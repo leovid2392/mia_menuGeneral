@@ -4,7 +4,16 @@ import "./navBar.css";
 
 import logo from "../../assets/logo_mia_by_selina.png";
 
-function NavBar({ handleWines, handleDrinks }) {
+function NavBar({
+	handleWines,
+	handleDrinks,
+	handleDinner,
+	handleVegan,
+	handlePizza,
+	handleDesserts,
+	handleLunch,
+	handleBreakFast,
+}) {
 	return (
 		<div className='nav'>
 			<figure className='nav_logoContaier'>
@@ -12,12 +21,12 @@ function NavBar({ handleWines, handleDrinks }) {
 			</figure>
 
 			<div className='nav_btnContainer'>
-				<button onClick={handleDrinks}>postres</button>
-				<button onClick={handleDrinks}>desayunos</button>
-				<button onClick={handleDrinks}>cena</button>
-				<button onClick={handleDrinks}>launch</button>
-				<button onClick={handleDrinks}>vegano</button>
-				<button onClick={handleDrinks}>pizza & pasta</button>
+				<button onClick={handleDesserts}>postres</button>
+				<button onClick={handleBreakFast}>desayunos</button>
+				<button onClick={handleDinner}>cena</button>
+				<button onClick={handleLunch}>lunch</button>
+				<button onClick={handleVegan}>vegano</button>
+				<button onClick={handlePizza}>pizza & pasta</button>
 				<button onClick={handleDrinks}>bebidas</button>
 				<button onClick={handleWines}>vinos</button>
 			</div>
