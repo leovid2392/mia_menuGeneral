@@ -1,0 +1,12 @@
+.drinks {
+	background-color: #e7e6dd;
+}
+.img_container {
+	width: 100%;
+	text-align: center;
+	margin: 0px;
+}
+
+.img_container img {
+	width: 90%;
+}

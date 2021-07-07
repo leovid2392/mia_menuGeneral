@@ -1,0 +1,20 @@
+.menuList_btnContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0px auto;
+	border: 1px solid red;
+	height: 320px;
+	width: 200px;
+}
+
+.menuList_btnContainer button {
+	font-size: 20px;
+	border-radius: 15px;
+	border-style: none;
+	height: 40px;
+}
+
+.alimentos_container {
+	display: none;
+}

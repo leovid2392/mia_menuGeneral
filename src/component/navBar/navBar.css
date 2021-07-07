@@ -1,0 +1,20 @@
+.nav {
+	text-align: center;
+}
+.nav_logoContaier {
+	width: 150px;
+	margin: 0px auto;
+}
+
+.nav_logoContaier img {
+	width: 100%;
+}
+
+.nav_btnContainer button {
+	height: 50px;
+	margin: 5px;
+	padding: 0px 20px;
+	border-radius: 15px;
+	border-style: none;
+	font-size: 15px;
+}

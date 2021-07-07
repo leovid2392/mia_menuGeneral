@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 
 import menu_wines from "../../assets/postres_esp.png";
+import logo from "../../assets/logo_mia_by_selina.png";
 
 import NavBar from "../navBar/NavBar";
+import Drinks from "../drinks/Drinks";
 
-function MenuList({ list }) {
+import "./menuList.css";
+
+function MenuList() {
 	const [wines, setWines] = useState(false);
 	const [drinks, setDrinks] = useState(false);
 
@@ -34,21 +38,33 @@ function MenuList({ list }) {
 
 	if (drinks) {
 		return (
-			<NavBar
-				handleWines={handleWines}
-				handleDrinks={handleDrinks}
-				img={menu_wines}
-			/>
+			<>
+				<NavBar handleWines={handleWines} handleDrinks={handleDrinks} />
+
+				<Drinks />
+			</>
 		);
 	}
 
 	return (
-		<div>
-			<h1>Nav Bar</h1>
+		<div className='menuList'>
+			<figure className='menuList_imgContainer'>
+				<img src={logo} alt='mia logo' />
+			</figure>
+			<section className='menuList_btnContainer'>
+				<button> alimentos </button>
+				<div className='alimentos_container'>
+					<button> postres </button>
+					<button> desayunos </button>
+					<button> launch </button>
+					<button> cena </button>
+					<button> vegano </button>
+					<button> pizza & pasta </button>
+				</div>
 
-			<button>{list[0]}</button>
-			<button onClick={handleDrinks}> {list[1]} </button>
-			<button onClick={handleWines}> {list[2]} </button>
+				<button onClick={handleDrinks}> bebidas</button>
+				<button onClick={handleWines}> vinos</button>
+			</section>
 		</div>
 	);
 }
