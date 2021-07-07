@@ -1,38 +1,54 @@
 import React, { useState } from "react";
-import menu_vinos from "../../assets/postres_esp.png";
+
+import menu_wines from "../../assets/postres_esp.png";
+
+import NavBar from "../navBar/NavBar";
 
 function MenuList({ list }) {
-	const [vinos, setVinos] = useState(false);
+	const [wines, setWines] = useState(false);
+	const [drinks, setDrinks] = useState(false);
 
-	const handleVinos = () => {
-		if (!vinos) {
-			setVinos(true);
-		} else {
-			setVinos(false);
+	const handleWines = () => {
+		if (!wines) {
+			setWines(true);
+			setDrinks(false);
 		}
 	};
 
-	if (vinos) {
-		return (
-			<div>
-				<h1>Nav Bar</h1>
+	const handleDrinks = () => {
+		if (!drinks) {
+			setDrinks(true);
+			setWines(false);
+		}
+	};
 
-				<button>{list[0]}</button>
-				<button>{list[1]}</button>
-				<button onClick={handleVinos}>{list[2]}</button>
-				<figure>
-					<img src={menu_vinos} alt='menu vinos' />
-				</figure>
-			</div>
+	if (wines) {
+		return (
+			<NavBar
+				handleWines={handleWines}
+				handleDrinks={handleDrinks}
+				img={menu_wines}
+			/>
 		);
 	}
+
+	if (drinks) {
+		return (
+			<NavBar
+				handleWines={handleWines}
+				handleDrinks={handleDrinks}
+				img={menu_wines}
+			/>
+		);
+	}
+
 	return (
 		<div>
 			<h1>Nav Bar</h1>
 
 			<button>{list[0]}</button>
-			<button>{list[1]}</button>
-			<button onClick={handleVinos}>{list[2]}</button>
+			<button onClick={handleDrinks}> {list[1]} </button>
+			<button onClick={handleWines}> {list[2]} </button>
 		</div>
 	);
 }
