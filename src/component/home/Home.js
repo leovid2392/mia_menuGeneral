@@ -12,19 +12,19 @@ function Home({ handleEnglish, handleSpanish }) {
 				<img src={logo} alt='logo' />
 			</figure>
 
-			<h2 className='home_title'>Menu</h2>
+			<button>Menu</button>
 
 			<div className='slider_container'>
 				<img src={slider1} alt='happy hour' />
 			</div>
-			<div className='language_selector'>
+			{/* <div className='language_selector'>
 				<button className='btn' onClick={handleEnglish}>
 					Ingles / English
 				</button>
 				<button className='btn' onClick={handleSpanish}>
 					Español /Spanish
 				</button>
-			</div>
+			</div> */}
 		</div>
 	);
 }
