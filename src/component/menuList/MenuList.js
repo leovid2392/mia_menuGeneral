@@ -257,7 +257,7 @@ function MenuList({ handleMenu, menuState }) {
 	if (desserts) {
 		return (
 			<>
-				<NavBar
+				{/* <NavBar
 					handleWines={handleWines}
 					handleDrinks={handleDrinks}
 					handleDinner={handleDinner}
@@ -266,7 +266,7 @@ function MenuList({ handleMenu, menuState }) {
 					handleDesserts={handleDesserts}
 					handlePizza={handlePizza}
 					handleVegan={handleVegan}
-				/>
+				/> */}
 				<Desserts />
 			</>
 		);
