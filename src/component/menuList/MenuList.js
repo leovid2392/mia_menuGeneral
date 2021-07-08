@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import menu_wines from "../../assets/postres_esp.png";
 import logo from "../../assets/logo_mia_by_selina.png";
 
+import { AiOutlineClose } from "react-icons/ai";
+
 import NavBar from "../navBar/NavBar";
 
 import Drinks from "../drinks/Drinks";
@@ -16,7 +18,7 @@ import BreakFast from "../breakFast/BreakFast";
 
 import "./menuList.css";
 
-function MenuList() {
+function MenuList({ handleMenu, menuState }) {
 	const [wines, setWines] = useState(false);
 	const [drinks, setDrinks] = useState(false);
 	const [dinner, setDinner] = useState(false);
@@ -271,23 +273,28 @@ function MenuList() {
 	}
 
 	return (
-		<div className='menuList'>
-			<figure className='menuList_imgContainer'>
+		<div className={menuState ? `menu_list` : `hide_menuList`}>
+			{/* <figure className='menuList_imgContainer'>
 				<img src={logo} alt='mia logo' />
-			</figure>
+			</figure> */}
 			<section className='menuList_btnContainer'>
-				<button> alimentos </button>
-				<div className='alimentos_active'>
+				{/* <button> alimentos </button> */}
+				<button className='menuList_icon' onClick={handleMenu}>
+					<AiOutlineClose />
+				</button>
+				<div className='menuList_btns'>
 					<button onClick={handleDesserts}> postres </button>
 					<button onClick={handleBreakFast}> desayunos </button>
 					<button onClick={handleLunch}> lunch </button>
 					<button onClick={handleDinner}> cena </button>
+				</div>
+				<div className='menuList_btns'>
 					<button onClick={handleVegan}> vegano </button>
 					<button onClick={handlePizza}> pizza & pasta </button>
-				</div>
 
-				<button onClick={handleDrinks}> bebidas</button>
-				<button onClick={handleWines}> vinos</button>
+					<button onClick={handleDrinks}> bebidas</button>
+					<button onClick={handleWines}> vinos</button>
+				</div>
 			</section>
 		</div>
 	);
