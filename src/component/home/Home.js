@@ -19,24 +19,27 @@ function Home({ handleEnglish, handleSpanish }) {
 	return (
 		<div className='app'>
 			<MenuList handleMenu={handleMenu} menuState={showMenu} />
-			<figure className='logo_container'>
-				<img src={logo} alt='logo' />
-			</figure>
 
-			<button onClick={handleMenu}>Menu</button>
+			<div className={showMenu ? `home_hide` : `home_test`}>
+				<figure className='logo_container'>
+					<img src={logo} alt='logo' />
+				</figure>
 
-			<div className='slider_container'>
-				<img src={slider1} alt='happy hour' />
+				<button onClick={handleMenu}>Menu</button>
+
+				<div className='slider_container'>
+					<img src={slider1} alt='happy hour' />
+				</div>
 			</div>
 
-			<div className='language_selector'>
+			{/* <div className='language_selector'>
 				<button className='btn' onClick={handleEnglish}>
 					Ingles / English
 				</button>
 				<button className='btn' onClick={handleSpanish}>
 					Español /Spanish
 				</button>
-			</div>
+			</div> */}
 		</div>
 	);
 }

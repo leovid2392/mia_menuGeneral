@@ -1,3 +1,7 @@
+.home_hide {
+	display: none;
+}
+
 .logo_container {
 	width: 150px;
 	margin: 0px auto;
