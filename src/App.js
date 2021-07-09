@@ -13,7 +13,8 @@ function App() {
 
 	if (showHome) {
 		return <Home setShowHome={setShowHome} showHome={showHome} />;
-	} else {
+	}
+	if (!showHome) {
 		return <MenuList setShowHome={setShowHome} showHome={showHome} />;
 	}
 }
