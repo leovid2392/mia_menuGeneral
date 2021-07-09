@@ -6,12 +6,16 @@ import "./App.css";
 import Home from "./component/home/Home";
 import MenuList from "./component/menuList/MenuList";
 
+import Pizza from "./component/pizza/Pizza";
+
 function App() {
-	return (
-		<>
-			<Home />
-		</>
-	);
+	const [showHome, setShowHome] = useState(true);
+
+	if (showHome) {
+		return <Home setShowHome={setShowHome} showHome={showHome} />;
+	} else {
+		return <MenuList setShowHome={setShowHome} showHome={showHome} />;
+	}
 }
 
 export default App;

@@ -18,7 +18,7 @@ import BreakFast from "../breakFast/BreakFast";
 
 import "./menuList.css";
 
-function MenuList({ handleMenu, menuState }) {
+function MenuList({ showHome, setShowHome }) {
 	const [wines, setWines] = useState(false);
 	const [drinks, setDrinks] = useState(false);
 	const [dinner, setDinner] = useState(false);
@@ -27,6 +27,12 @@ function MenuList({ handleMenu, menuState }) {
 	const [vegan, setVegan] = useState(false);
 	const [breakFast, setBreakFast] = useState(false);
 	const [pizza, setPizza] = useState(false);
+
+	const handleMenu = () => {
+		if (!showHome) {
+			setShowHome(true);
+		}
+	};
 
 	const handlePizza = () => {
 		if (!pizza) {
@@ -273,7 +279,7 @@ function MenuList({ handleMenu, menuState }) {
 	}
 
 	return (
-		<div className={menuState ? `menu_list` : `hide_menuList`}>
+		<div className='menu_list'>
 			{/* <figure className='menuList_imgContainer'>
 				<img src={logo} alt='mia logo' />
 			</figure> */}

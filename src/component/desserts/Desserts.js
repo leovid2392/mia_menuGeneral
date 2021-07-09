@@ -6,9 +6,15 @@ import "./desserts.css";
 
 function Desserts() {
 	return (
-		<figure className='desserts_imgContainer'>
-			<img src={img} alt='menu postres' />
-		</figure>
+		<>
+			<div>
+				<button>home</button>
+				<button>menu</button>
+			</div>
+			<figure className='desserts_imgContainer'>
+				<img src={img} alt='menu postres' />
+			</figure>
+		</>
 	);
 }
 
