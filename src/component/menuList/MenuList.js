@@ -142,14 +142,16 @@ function MenuList({ showHome, setShowHome }) {
 		return (
 			<>
 				<NavBar
-					handleWines={handleWines}
-					handleDrinks={handleDrinks}
-					handleDinner={handleDinner}
-					handleLunch={handleLunch}
-					handleBreakFast={handleBreakFast}
-					handleDesserts={handleDesserts}
-					handlePizza={handlePizza}
-					handleVegan={handleVegan}
+					setShowHome={setShowHome}
+					showHome={showHome}
+					// handleWines={handleWines}
+					// handleDrinks={handleDrinks}
+					// handleDinner={handleDinner}
+					// handleLunch={handleLunch}
+					// handleBreakFast={handleBreakFast}
+					// handleDesserts={handleDesserts}
+					// handlePizza={handlePizza}
+					// handleVegan={handleVegan}
 				/>
 
 				<Wines />
