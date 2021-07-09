@@ -144,6 +144,8 @@ function MenuList({ showHome, setShowHome }) {
 				<NavBar
 					setShowHome={setShowHome}
 					showHome={showHome}
+					food='wines'
+					setWines={setWines}
 					// handleWines={handleWines}
 					// handleDrinks={handleDrinks}
 					// handleDinner={handleDinner}
@@ -162,14 +164,18 @@ function MenuList({ showHome, setShowHome }) {
 		return (
 			<>
 				<NavBar
-					handleWines={handleWines}
-					handleDrinks={handleDrinks}
-					handleDinner={handleDinner}
-					handleLunch={handleLunch}
-					handleBreakFast={handleBreakFast}
-					handleDesserts={handleDesserts}
-					handlePizza={handlePizza}
-					handleVegan={handleVegan}
+					setShowHome={setShowHome}
+					showHome={showHome}
+					food='drinks'
+					setDrinks={setDrinks}
+					// handleWines={handleWines}
+					// handleDrinks={handleDrinks}
+					// handleDinner={handleDinner}
+					// handleLunch={handleLunch}
+					// handleBreakFast={handleBreakFast}
+					// handleDesserts={handleDesserts}
+					// handlePizza={handlePizza}
+					// handleVegan={handleVegan}
 				/>
 
 				<Drinks />
