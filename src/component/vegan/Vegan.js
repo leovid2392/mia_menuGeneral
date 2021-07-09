@@ -6,7 +6,7 @@ import "./vegan.css";
 
 function Vegan() {
 	return (
-		<figure className='menuVegan_container'>
+		<figure className='menu_img'>
 			<img src={menu_vegan} alt='menu vegano' />
 		</figure>
 	);

@@ -7,7 +7,7 @@ import "./desserts.css";
 function Desserts() {
 	return (
 		<>
-			<figure className='desserts_imgContainer'>
+			<figure className='menu_img'>
 				<img src={img} alt='menu postres' />
 			</figure>
 		</>

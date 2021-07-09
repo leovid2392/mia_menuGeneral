@@ -14,28 +14,28 @@ import "./drinks.css";
 function Drinks() {
 	return (
 		<div className='drinks'>
-			<figure className='img_container'>
+			<figure className='menu_img'>
 				<img src={vodka} alt='menu vodka' />
 			</figure>
-			<figure className='img_container'>
+			<figure className='menu_img'>
 				<img className='refrescos' src={refresco} alt='menu refresco' />
 			</figure>
-			<figure className='img_container'>
+			<figure className='menu_img'>
 				<img src={sotol} alt='menu vodka' />
 			</figure>
-			<figure className='img_container'>
+			<figure className='menu_img'>
 				<img src={whisky} alt='menu vodka' />
 			</figure>
-			<figure className='img_container'>
+			<figure className='menu_img'>
 				<img src={mezcal} alt='menu vodka' />
 			</figure>
-			<figure className='img_container'>
+			<figure className='menu_img'>
 				<img src={licores} alt='menu vodka' />
 			</figure>
-			<figure className='img_container'>
+			<figure className='menu_img'>
 				<img src={botellas} alt='menu vodka' />
 			</figure>
-			<figure className='img_container'>
+			<figure className='menu_img'>
 				<img src={tequilas} alt='menu vodka' />
 			</figure>
 		</div>

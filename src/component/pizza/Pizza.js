@@ -5,7 +5,7 @@ import "./pizza.css";
 
 function Pizza() {
 	return (
-		<figure className='pizzaImg_container'>
+		<figure className='menu_img'>
 			<img src={menuPizza} alt='menu pizza' />
 		</figure>
 	);

@@ -8,10 +8,10 @@ import "./breakFast.css";
 function BreakFast() {
 	return (
 		<>
-			<figure className='breakFast_container'>
+			<figure className='menu_img'>
 				<img src={breakFastMenu} alt='menu desayuno' />
 			</figure>
-			<figure className='breakFast_container'>
+			<figure className='menu_img'>
 				<img src={breakFastMenu2} alt='menu desayuno' />
 			</figure>
 		</>

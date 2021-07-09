@@ -6,7 +6,7 @@ import "./lunch.css";
 
 function Lunch() {
 	return (
-		<figure className='lunch_container'>
+		<figure className='menu_img'>
 			<img src={menuLunch} alt='menu lunch' />
 		</figure>
 	);
