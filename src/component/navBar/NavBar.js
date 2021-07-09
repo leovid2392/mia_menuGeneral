@@ -1,8 +1,22 @@
 import React from "react";
 
+import { AiOutlineHome } from "react-icons/ai";
+import { FaBars } from "react-icons/fa";
 import "./navBar.css";
 
-function NavBar({ setShowHome, showHome, food, setWines, setDrinks }) {
+function NavBar({
+	setShowHome,
+	showHome,
+	food,
+	setWines,
+	setDrinks,
+	setDinner,
+	setLunch,
+	setBreakFast,
+	setVegan,
+	setPizza,
+	setDesserts,
+}) {
 	const handleHome = () => {
 		if (!showHome) {
 			setShowHome(true);
@@ -17,12 +31,40 @@ function NavBar({ setShowHome, showHome, food, setWines, setDrinks }) {
 		if (food === "drinks") {
 			setDrinks(false);
 		}
+
+		if (food === "dinner") {
+			setDinner(false);
+		}
+
+		if (food === "lunch") {
+			setLunch(false);
+		}
+
+		if (food === "breakFast") {
+			setBreakFast(false);
+		}
+
+		if (food === "vegan") {
+			setVegan(false);
+		}
+
+		if (food === "pizza") {
+			setPizza(false);
+		}
+
+		if (food === "desserts") {
+			setDesserts(false);
+		}
 	};
 
 	return (
 		<div className='nav'>
-			<button onClick={handleHome}>Home</button>
-			<button onClick={handleMenu}>Menu</button>
+			<button onClick={handleHome}>
+				<AiOutlineHome />
+			</button>
+			<button onClick={handleMenu}>
+				<FaBars />
+			</button>
 		</div>
 	);
 }

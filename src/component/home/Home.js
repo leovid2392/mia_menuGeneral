@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 
 import logo from "../../assets/logo_mia_by_selina.png";
 import slider1 from "../../assets/slider1.jpg";
+import { FaBars } from "react-icons/fa";
 
 import "./home.css";
 
@@ -13,17 +14,20 @@ function Home({ showHome, setShowHome }) {
 	};
 
 	return (
-		<div className='app'>
-			<figure className='logo_container'>
+		<section className='home'>
+			<figure className='home_logoContainer'>
 				<img src={logo} alt='logo' />
 			</figure>
 
-			<button onClick={handleMenu}>Menu</button>
+			<button className='home_button' onClick={handleMenu}>
+				Menu
+				<FaBars />
+			</button>
 
-			<div className='slider_container'>
+			<div className='btn home_sliderContainer'>
 				<img src={slider1} alt='happy hour' />
 			</div>
-		</div>
+		</section>
 	);
 }
 

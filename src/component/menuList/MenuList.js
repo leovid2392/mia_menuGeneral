@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 
-import menu_wines from "../../assets/postres_esp.png";
-import logo from "../../assets/logo_mia_by_selina.png";
-
 import { AiOutlineClose } from "react-icons/ai";
 
 import NavBar from "../navBar/NavBar";
@@ -186,14 +183,10 @@ function MenuList({ showHome, setShowHome }) {
 		return (
 			<>
 				<NavBar
-					handleWines={handleWines}
-					handleDrinks={handleDrinks}
-					handleDinner={handleDinner}
-					handleLunch={handleLunch}
-					handleBreakFast={handleBreakFast}
-					handleDesserts={handleDesserts}
-					handlePizza={handlePizza}
-					handleVegan={handleVegan}
+					setShowHome={setShowHome}
+					showHome={showHome}
+					food='dinner'
+					setDinner={setDinner}
 				/>
 
 				<Dinner />
@@ -204,14 +197,10 @@ function MenuList({ showHome, setShowHome }) {
 		return (
 			<>
 				<NavBar
-					handleWines={handleWines}
-					handleDrinks={handleDrinks}
-					handleDinner={handleDinner}
-					handleLunch={handleLunch}
-					handleBreakFast={handleBreakFast}
-					handleDesserts={handleDesserts}
-					handlePizza={handlePizza}
-					handleVegan={handleVegan}
+					setShowHome={setShowHome}
+					showHome={showHome}
+					food='lunch'
+					setLunch={setLunch}
 				/>
 				<Lunch />
 			</>
@@ -221,14 +210,10 @@ function MenuList({ showHome, setShowHome }) {
 		return (
 			<>
 				<NavBar
-					handleWines={handleWines}
-					handleDrinks={handleDrinks}
-					handleDinner={handleDinner}
-					handleLunch={handleLunch}
-					handleBreakFast={handleBreakFast}
-					handleDesserts={handleDesserts}
-					handlePizza={handlePizza}
-					handleVegan={handleVegan}
+					setShowHome={setShowHome}
+					showHome={showHome}
+					food='breakFast'
+					setBreakFast={setBreakFast}
 				/>
 				<BreakFast />
 			</>
@@ -238,14 +223,10 @@ function MenuList({ showHome, setShowHome }) {
 		return (
 			<>
 				<NavBar
-					handleWines={handleWines}
-					handleDrinks={handleDrinks}
-					handleDinner={handleDinner}
-					handleLunch={handleLunch}
-					handleBreakFast={handleBreakFast}
-					handleDesserts={handleDesserts}
-					handlePizza={handlePizza}
-					handleVegan={handleVegan}
+					setShowHome={setShowHome}
+					showHome={showHome}
+					food='vegan'
+					setVegan={setVegan}
 				/>
 				<Vegan />
 			</>
@@ -255,14 +236,10 @@ function MenuList({ showHome, setShowHome }) {
 		return (
 			<>
 				<NavBar
-					handleWines={handleWines}
-					handleDrinks={handleDrinks}
-					handleDinner={handleDinner}
-					handleLunch={handleLunch}
-					handleBreakFast={handleBreakFast}
-					handleDesserts={handleDesserts}
-					handlePizza={handlePizza}
-					handleVegan={handleVegan}
+					setShowHome={setShowHome}
+					showHome={showHome}
+					food='pizza'
+					setPizza={setPizza}
 				/>
 				<Pizza />
 			</>
@@ -271,16 +248,12 @@ function MenuList({ showHome, setShowHome }) {
 	if (desserts) {
 		return (
 			<>
-				{/* <NavBar
-					handleWines={handleWines}
-					handleDrinks={handleDrinks}
-					handleDinner={handleDinner}
-					handleLunch={handleLunch}
-					handleBreakFast={handleBreakFast}
-					handleDesserts={handleDesserts}
-					handlePizza={handlePizza}
-					handleVegan={handleVegan}
-				/> */}
+				<NavBar
+					setShowHome={setShowHome}
+					showHome={showHome}
+					food='desserts'
+					setDesserts={setDesserts}
+				/>
 				<Desserts />
 			</>
 		);
