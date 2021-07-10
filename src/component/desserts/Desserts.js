@@ -1,10 +1,10 @@
 import React from "react";
 
-import img from "../../assets/postres_esp.png";
+import img from "../../assets/desserts_esp.png";
 
 import "./desserts.css";
 
-function Desserts() {
+function Desserts({ img }) {
 	return (
 		<>
 			<figure className='menu_img'>

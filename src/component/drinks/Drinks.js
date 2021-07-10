@@ -1,42 +1,33 @@
 import React from "react";
 
-import vodka from "../../assets/bebidas1.png";
-import refresco from "../../assets/bebidas1_2.png";
-import sotol from "../../assets/bebidas2.png";
-import whisky from "../../assets/bebidas2_2.png";
-import mezcal from "../../assets/bebidas3.png";
-import licores from "../../assets/bebidas3_2.png";
-import botellas from "../../assets/bebidas4.png";
-import tequilas from "../../assets/bebidas4_2.png";
-
 import "./drinks.css";
 
-function Drinks() {
+function Drinks({ img1, img1_2, img2, img2_2, img3, img3_2, img4, img4_2 }) {
 	return (
 		<div className='drinks'>
 			<figure className='menu_img'>
-				<img src={vodka} alt='menu vodka' />
+				<img src={img1} alt='menu vodka' />
 			</figure>
 			<figure className='menu_img'>
-				<img className='refrescos' src={refresco} alt='menu refresco' />
+				<img className='refrescos' src={img1_2} alt='menu refresco' />
 			</figure>
 			<figure className='menu_img'>
-				<img src={sotol} alt='menu vodka' />
+				<img src={img2} alt='menu vodka' />
 			</figure>
 			<figure className='menu_img'>
-				<img src={whisky} alt='menu vodka' />
+				<img src={img2_2} alt='menu vodka' />
 			</figure>
 			<figure className='menu_img'>
-				<img src={mezcal} alt='menu vodka' />
+				<img src={img3} alt='menu vodka' />
 			</figure>
 			<figure className='menu_img'>
-				<img src={licores} alt='menu vodka' />
+				<img src={img3_2} alt='menu vodka' />
 			</figure>
 			<figure className='menu_img'>
-				<img src={botellas} alt='menu vodka' />
+				<img src={img4} alt='menu vodka' />
 			</figure>
 			<figure className='menu_img'>
-				<img src={tequilas} alt='menu vodka' />
+				<img src={img4_2} alt='menu vodka' />
 			</figure>
 		</div>
 	);

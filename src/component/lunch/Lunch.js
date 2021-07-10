@@ -1,13 +1,11 @@
 import React from "react";
 
-import menuLunch from "../../assets/lunch_esp.jpg";
-
 import "./lunch.css";
 
-function Lunch() {
+function Lunch({ img }) {
 	return (
 		<figure className='menu_img'>
-			<img src={menuLunch} alt='menu lunch' />
+			<img src={img} alt='menu lunch' />
 		</figure>
 	);
 }

@@ -2,8 +2,49 @@ import React, { useState } from "react";
 
 import { AiOutlineClose } from "react-icons/ai";
 
-import pizzaImg from "../../assets/pizza_esp.jpg";
-import cenaImg from "../../assets/cena_esp.jpg";
+// <<<<<<<<<<<<<<<<<<<    MENU IMAGES    >>>>>>>>>>>>>>>>>>>>>>
+
+// drinks images
+import bebidas1Img from "../../assets/bebidas1.png";
+import bebidas1_2Img from "../../assets/bebidas1_2.png";
+import bebidas2Img from "../../assets/bebidas2.png";
+import bebidas2_2Img from "../../assets/bebidas2_2.png";
+import bebidas3Img from "../../assets/bebidas3.png";
+import bebidas3_2Img from "../../assets/bebidas3_2.png";
+import bebidas4Img from "../../assets/bebidas4.png";
+import bebidas4_2Img from "../../assets/bebidas4_2.png";
+
+// pizza and pasta images
+
+import pizzaPastaEspImg from "../../assets/pizzaPasta_esp.jpg";
+import pizzaPastaIngImg from "../../assets/pizzaPasta_ing.jpg";
+
+// dinner images
+
+import dinnerEspImg from "../../assets/dinner_esp.jpg";
+import dinnerIngImg from "../../assets/dinner_ing.jpg";
+
+// desserts images
+
+import dessertsEspImg from "../../assets/desserts_esp.png";
+import dessertsIngImg from "../../assets/desserts_ing.png";
+
+// lunch images
+
+import lunchEspImg from "../../assets/lunch_esp.jpg";
+import lunchIngImg from "../../assets/lunch_ing.jpg";
+
+// vegan images
+
+import veganEspImg from "../../assets/vegan_esp.png";
+import veganIngImg from "../../assets/vegan_ing.png";
+
+// breakFast images
+
+import breakFastEspImg from "../../assets/breakFast_esp.png";
+import breakFastIngImg from "../../assets/breakFast_ing.jpg";
+
+// <<<<<<<<<<<<<<<<<<<    MENU IMAGES    >>>>>>>>>>>>>>>>>>>>>>
 
 import NavBar from "../navBar/NavBar";
 import Drinks from "../drinks/Drinks";
@@ -146,7 +187,7 @@ function MenuList({ showHome, setShowHome }) {
 		}
 	};
 
-	if (wines) {
+	if (english && wines) {
 		return (
 			<>
 				<NavBar
@@ -154,21 +195,26 @@ function MenuList({ showHome, setShowHome }) {
 					showHome={showHome}
 					food='wines'
 					setWines={setWines}
-					// handleWines={handleWines}
-					// handleDrinks={handleDrinks}
-					// handleDinner={handleDinner}
-					// handleLunch={handleLunch}
-					// handleBreakFast={handleBreakFast}
-					// handleDesserts={handleDesserts}
-					// handlePizza={handlePizza}
-					// handleVegan={handleVegan}
 				/>
 
-				<Wines />
+				<Wines img={dinnerIngImg} />
+			</>
+		);
+	} else if (dinner) {
+		return (
+			<>
+				<NavBar
+					setShowHome={setShowHome}
+					showHome={showHome}
+					food='wines'
+					setWines={setWines}
+				/>
+
+				<Wines img={dinnerEspImg} />
 			</>
 		);
 	}
-	if (drinks) {
+	if (english && drinks) {
 		return (
 			<>
 				<NavBar
@@ -176,17 +222,40 @@ function MenuList({ showHome, setShowHome }) {
 					showHome={showHome}
 					food='drinks'
 					setDrinks={setDrinks}
-					// handleWines={handleWines}
-					// handleDrinks={handleDrinks}
-					// handleDinner={handleDinner}
-					// handleLunch={handleLunch}
-					// handleBreakFast={handleBreakFast}
-					// handleDesserts={handleDesserts}
-					// handlePizza={handlePizza}
-					// handleVegan={handleVegan}
 				/>
 
-				<Drinks />
+				<Drinks
+					img1={bebidas1Img}
+					img1_2={bebidas1_2Img}
+					img2={bebidas2Img}
+					img2_2={bebidas2_2Img}
+					img3={bebidas3Img}
+					img3_2={bebidas3_2Img}
+					img4={bebidas4Img}
+					img4_2={bebidas4_2Img}
+				/>
+			</>
+		);
+	} else if (drinks) {
+		return (
+			<>
+				<NavBar
+					setShowHome={setShowHome}
+					showHome={showHome}
+					food='drinks'
+					setDrinks={setDrinks}
+				/>
+
+				<Drinks
+					img1={bebidas1Img}
+					img1_2={bebidas1_2Img}
+					img2={bebidas2Img}
+					img2_2={bebidas2_2Img}
+					img3={bebidas3Img}
+					img3_2={bebidas3_2Img}
+					img4={bebidas4Img}
+					img4_2={bebidas4_2Img}
+				/>
 			</>
 		);
 	}
@@ -200,7 +269,7 @@ function MenuList({ showHome, setShowHome }) {
 					setDinner={setDinner}
 				/>
 
-				<Dinner img={pizzaImg} />
+				<Dinner img={dinnerIngImg} />
 			</>
 		);
 	} else if (dinner) {
@@ -213,11 +282,11 @@ function MenuList({ showHome, setShowHome }) {
 					setDinner={setDinner}
 				/>
 
-				<Dinner img={cenaImg} />
+				<Dinner img={dinnerEspImg} />
 			</>
 		);
 	}
-	if (lunch) {
+	if (english && lunch) {
 		return (
 			<>
 				<NavBar
@@ -226,11 +295,23 @@ function MenuList({ showHome, setShowHome }) {
 					food='lunch'
 					setLunch={setLunch}
 				/>
-				<Lunch />
+				<Lunch img={lunchIngImg} />
+			</>
+		);
+	} else if (lunch) {
+		return (
+			<>
+				<NavBar
+					setShowHome={setShowHome}
+					showHome={showHome}
+					food='lunch'
+					setLunch={setLunch}
+				/>
+				<Lunch img={lunchEspImg} />
 			</>
 		);
 	}
-	if (breakFast) {
+	if (english && breakFast) {
 		return (
 			<>
 				<NavBar
@@ -239,11 +320,23 @@ function MenuList({ showHome, setShowHome }) {
 					food='breakFast'
 					setBreakFast={setBreakFast}
 				/>
-				<BreakFast />
+				<BreakFast img={breakFastIngImg} />
+			</>
+		);
+	} else if (breakFast) {
+		return (
+			<>
+				<NavBar
+					setShowHome={setShowHome}
+					showHome={showHome}
+					food='breakFast'
+					setBreakFast={setBreakFast}
+				/>
+				<BreakFast img={breakFastEspImg} />
 			</>
 		);
 	}
-	if (vegan) {
+	if (english && vegan) {
 		return (
 			<>
 				<NavBar
@@ -252,11 +345,23 @@ function MenuList({ showHome, setShowHome }) {
 					food='vegan'
 					setVegan={setVegan}
 				/>
-				<Vegan />
+				<Vegan img={veganIngImg} />
+			</>
+		);
+	} else if (vegan) {
+		return (
+			<>
+				<NavBar
+					setShowHome={setShowHome}
+					showHome={showHome}
+					food='vegan'
+					setVegan={setVegan}
+				/>
+				<Vegan img={veganEspImg} />
 			</>
 		);
 	}
-	if (pizza) {
+	if (english && pizza) {
 		return (
 			<>
 				<NavBar
@@ -265,11 +370,23 @@ function MenuList({ showHome, setShowHome }) {
 					food='pizza'
 					setPizza={setPizza}
 				/>
-				<Pizza />
+				<Pizza img={pizzaPastaIngImg} />
+			</>
+		);
+	} else if (pizza) {
+		return (
+			<>
+				<NavBar
+					setShowHome={setShowHome}
+					showHome={showHome}
+					food='pizza'
+					setPizza={setPizza}
+				/>
+				<Pizza img={pizzaPastaEspImg} />
 			</>
 		);
 	}
-	if (desserts) {
+	if (english && desserts) {
 		return (
 			<>
 				<NavBar
@@ -278,7 +395,19 @@ function MenuList({ showHome, setShowHome }) {
 					food='desserts'
 					setDesserts={setDesserts}
 				/>
-				<Desserts />
+				<Desserts img={dessertsIngImg} />
+			</>
+		);
+	} else if (desserts) {
+		return (
+			<>
+				<NavBar
+					setShowHome={setShowHome}
+					showHome={showHome}
+					food='desserts'
+					setDesserts={setDesserts}
+				/>
+				<Desserts img={dessertsEspImg} />
 			</>
 		);
 	}

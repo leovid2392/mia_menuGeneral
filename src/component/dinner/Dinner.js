@@ -1,6 +1,5 @@
 import React from "react";
 
-import dinner_img from "../../assets/cena_esp.jpg";
 import "./dinner.css";
 
 function Dinner({ img }) {

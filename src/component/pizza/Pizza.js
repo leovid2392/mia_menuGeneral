@@ -1,12 +1,11 @@
 import React from "react";
 
-import menuPizza from "../../assets/pizza_esp.jpg";
 import "./pizza.css";
 
-function Pizza() {
+function Pizza({ img }) {
 	return (
 		<figure className='menu_img'>
-			<img src={menuPizza} alt='menu pizza' />
+			<img src={img} alt='menu pizza' />
 		</figure>
 	);
 }
