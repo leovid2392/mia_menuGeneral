@@ -197,10 +197,10 @@ function MenuList({ showHome, setShowHome }) {
 					setWines={setWines}
 				/>
 
-				<Wines img={dinnerIngImg} />
+				<Wines />
 			</>
 		);
-	} else if (dinner) {
+	} else if (wines) {
 		return (
 			<>
 				<NavBar
@@ -210,7 +210,7 @@ function MenuList({ showHome, setShowHome }) {
 					setWines={setWines}
 				/>
 
-				<Wines img={dinnerEspImg} />
+				<Wines />
 			</>
 		);
 	}
