@@ -2,8 +2,10 @@ import React, { useState } from "react";
 
 import { AiOutlineClose } from "react-icons/ai";
 
-import NavBar from "../navBar/NavBar";
+import pizzaImg from "../../assets/pizza_esp.jpg";
+import cenaImg from "../../assets/cena_esp.jpg";
 
+import NavBar from "../navBar/NavBar";
 import Drinks from "../drinks/Drinks";
 import Dinner from "../dinner/Dinner";
 import Vegan from "../vegan/Vegan";
@@ -16,6 +18,7 @@ import BreakFast from "../breakFast/BreakFast";
 import "./menuList.css";
 
 function MenuList({ showHome, setShowHome }) {
+	const [english, setEnglish] = useState(false);
 	const [wines, setWines] = useState(false);
 	const [drinks, setDrinks] = useState(false);
 	const [dinner, setDinner] = useState(false);
@@ -135,6 +138,14 @@ function MenuList({ showHome, setShowHome }) {
 		}
 	};
 
+	const handleEnglish = () => {
+		if (!english) {
+			setEnglish(true);
+		} else {
+			setEnglish(false);
+		}
+	};
+
 	if (wines) {
 		return (
 			<>
@@ -179,7 +190,7 @@ function MenuList({ showHome, setShowHome }) {
 			</>
 		);
 	}
-	if (dinner) {
+	if (english && dinner) {
 		return (
 			<>
 				<NavBar
@@ -189,7 +200,20 @@ function MenuList({ showHome, setShowHome }) {
 					setDinner={setDinner}
 				/>
 
-				<Dinner />
+				<Dinner img={pizzaImg} />
+			</>
+		);
+	} else if (dinner) {
+		return (
+			<>
+				<NavBar
+					setShowHome={setShowHome}
+					showHome={showHome}
+					food='dinner'
+					setDinner={setDinner}
+				/>
+
+				<Dinner img={cenaImg} />
 			</>
 		);
 	}
@@ -259,32 +283,85 @@ function MenuList({ showHome, setShowHome }) {
 		);
 	}
 
-	return (
-		<div className='menu_list'>
-			{/* <figure className='menuList_imgContainer'>
-				<img src={logo} alt='mia logo' />
-			</figure> */}
-			<section className='menuList_btnContainer'>
-				{/* <button> alimentos </button> */}
-				<button className='menuList_icon' onClick={handleMenu}>
-					<AiOutlineClose />
-				</button>
-				<div className='menuList_btns'>
-					<button onClick={handleDesserts}> postres </button>
-					<button onClick={handleBreakFast}> desayunos </button>
-					<button onClick={handleLunch}> lunch </button>
-					<button onClick={handleDinner}> cena </button>
-				</div>
-				<div className='menuList_btns'>
-					<button onClick={handleVegan}> vegano </button>
-					<button onClick={handlePizza}> pizza & pasta </button>
+	if (!english) {
+		return (
+			<section className='menuList'>
+				<div className='menuList_btnContainer'>
+					<div>
+						<button className='menuList_icon' onClick={handleMenu}>
+							<AiOutlineClose />
+						</button>
+						<button onClick={handleEnglish}>english</button>
+					</div>
+					<div className='menuList_btns'>
+						<button onClick={handleDesserts}> postres </button>
+						<button onClick={handleBreakFast}> desayunos </button>
+						<button onClick={handleLunch}> lunch </button>
+						<button onClick={handleDinner}> cena </button>
+					</div>
+					<div className='menuList_btns'>
+						<button onClick={handleVegan}> vegano </button>
+						<button onClick={handlePizza}> pizza & pasta </button>
 
-					<button onClick={handleDrinks}> bebidas</button>
-					<button onClick={handleWines}> vinos</button>
+						<button onClick={handleDrinks}> bebidas</button>
+						<button onClick={handleWines}> vinos</button>
+					</div>
 				</div>
 			</section>
-		</div>
-	);
+		);
+	} else {
+		return (
+			<section className='menuList'>
+				<div className='menuList_btnContainer'>
+					<div>
+						<button className='menuList_icon' onClick={handleMenu}>
+							<AiOutlineClose />
+						</button>
+						<button onClick={handleEnglish}>english</button>
+					</div>
+					<div className='menuList_btns'>
+						<button onClick={handleDesserts}> desserts </button>
+						<button onClick={handleBreakFast}> Breakfast </button>
+						<button onClick={handleLunch}> Lunch </button>
+						<button onClick={handleDinner}> Dinner </button>
+					</div>
+					<div className='menuList_btns'>
+						<button onClick={handleVegan}> Vegan </button>
+						<button onClick={handlePizza}> Pizza & Pasta </button>
+
+						<button onClick={handleDrinks}> Drinks</button>
+						<button onClick={handleWines}> Wines</button>
+					</div>
+				</div>
+			</section>
+		);
+	}
+
+	// return (
+	// 	<section className='menuList'>
+	// 		<div className='menuList_btnContainer'>
+	// 			<div>
+	// 				<button className='menuList_icon' onClick={handleMenu}>
+	// 					<AiOutlineClose />
+	// 				</button>
+	// 				<button>english</button>
+	// 			</div>
+	// 			<div className='menuList_btns'>
+	// 				<button onClick={handleDesserts}> postres </button>
+	// 				<button onClick={handleBreakFast}> desayunos </button>
+	// 				<button onClick={handleLunch}> lunch </button>
+	// 				<button onClick={handleDinner}> cena </button>
+	// 			</div>
+	// 			<div className='menuList_btns'>
+	// 				<button onClick={handleVegan}> vegano </button>
+	// 				<button onClick={handlePizza}> pizza & pasta </button>
+
+	// 				<button onClick={handleDrinks}> bebidas</button>
+	// 				<button onClick={handleWines}> vinos</button>
+	// 			</div>
+	// 		</div>
+	// 	</section>
+	// );
 }
 
 export default MenuList;

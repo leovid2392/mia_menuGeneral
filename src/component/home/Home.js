@@ -2,7 +2,6 @@ import React from "react";
 
 import logo from "../../assets/logo_mia_by_selina.png";
 import slider1 from "../../assets/slider1.jpg";
-import { FaBars } from "react-icons/fa";
 
 import "./home.css";
 
@@ -21,7 +20,6 @@ function Home({ showHome, setShowHome }) {
 
 			<button className='home_button' onClick={handleMenu}>
 				Menu
-				<FaBars />
 			</button>
 
 			<div className='btn home_sliderContainer'>
