@@ -196,7 +196,9 @@ function MenuList({ showHome, setShowHome }) {
 					food='wines'
 					setWines={setWines}
 				/>
-
+				<p className='taxInfo'>
+					all prices are in mexican pesos and include 16% TAX FEE
+				</p>
 				<Wines />
 			</>
 		);
@@ -209,6 +211,9 @@ function MenuList({ showHome, setShowHome }) {
 					food='wines'
 					setWines={setWines}
 				/>
+				<p className='taxInfo'>
+					Los precios son en pesos mexicanos e incluyen 16% de IVA
+				</p>
 
 				<Wines />
 			</>
@@ -223,6 +228,9 @@ function MenuList({ showHome, setShowHome }) {
 					food='drinks'
 					setDrinks={setDrinks}
 				/>
+				<p className='taxInfo'>
+					all prices are in mexican pesos and include 16% TAX FEE
+				</p>
 
 				<Drinks
 					img1={bebidas1Img}
@@ -245,6 +253,10 @@ function MenuList({ showHome, setShowHome }) {
 					food='drinks'
 					setDrinks={setDrinks}
 				/>
+
+				<p className='taxInfo'>
+					Los precios son en pesos mexicanos e incluyen 16% de IVA
+				</p>
 
 				<Drinks
 					img1={bebidas1Img}
@@ -269,6 +281,10 @@ function MenuList({ showHome, setShowHome }) {
 					setDinner={setDinner}
 				/>
 
+				<p className='taxInfo'>
+					all prices are in mexican pesos and include 16% TAX FEE
+				</p>
+
 				<Dinner img={dinnerIngImg} />
 			</>
 		);
@@ -281,6 +297,10 @@ function MenuList({ showHome, setShowHome }) {
 					food='dinner'
 					setDinner={setDinner}
 				/>
+
+				<p className='taxInfo'>
+					Los precios son en pesos mexicanos e incluyen 16% de IVA
+				</p>
 
 				<Dinner img={dinnerEspImg} />
 			</>
@@ -295,6 +315,9 @@ function MenuList({ showHome, setShowHome }) {
 					food='lunch'
 					setLunch={setLunch}
 				/>
+				<p className='taxInfo'>
+					all prices are in mexican pesos and include 16% TAX FEE
+				</p>
 				<Lunch img={lunchIngImg} />
 			</>
 		);
@@ -307,6 +330,9 @@ function MenuList({ showHome, setShowHome }) {
 					food='lunch'
 					setLunch={setLunch}
 				/>
+				<p className='taxInfo'>
+					Los precios son en pesos mexicanos e incluyen 16% de IVA
+				</p>
 				<Lunch img={lunchEspImg} />
 			</>
 		);
@@ -320,6 +346,9 @@ function MenuList({ showHome, setShowHome }) {
 					food='breakFast'
 					setBreakFast={setBreakFast}
 				/>
+				<p className='taxInfo'>
+					all prices are in mexican pesos and include 16% TAX FEE
+				</p>
 				<BreakFast img={breakFastIngImg} />
 			</>
 		);
@@ -332,6 +361,9 @@ function MenuList({ showHome, setShowHome }) {
 					food='breakFast'
 					setBreakFast={setBreakFast}
 				/>
+				<p className='taxInfo'>
+					Los precios son en pesos mexicanos e incluyen 16% de IVA
+				</p>
 				<BreakFast img={breakFastEspImg} />
 			</>
 		);
@@ -345,6 +377,9 @@ function MenuList({ showHome, setShowHome }) {
 					food='vegan'
 					setVegan={setVegan}
 				/>
+				<p className='taxInfo'>
+					all prices are in mexican pesos and include 16% TAX FEE
+				</p>
 				<Vegan img={veganIngImg} />
 			</>
 		);
@@ -357,6 +392,9 @@ function MenuList({ showHome, setShowHome }) {
 					food='vegan'
 					setVegan={setVegan}
 				/>
+				<p className='taxInfo'>
+					Los precios son en pesos mexicanos e incluyen 16% de IVA
+				</p>
 				<Vegan img={veganEspImg} />
 			</>
 		);
@@ -370,6 +408,9 @@ function MenuList({ showHome, setShowHome }) {
 					food='pizza'
 					setPizza={setPizza}
 				/>
+				<p className='taxInfo'>
+					all prices are in mexican pesos and include 16% TAX FEE
+				</p>
 				<Pizza img={pizzaPastaIngImg} />
 			</>
 		);
@@ -382,6 +423,9 @@ function MenuList({ showHome, setShowHome }) {
 					food='pizza'
 					setPizza={setPizza}
 				/>
+				<p className='taxInfo'>
+					Los precios son en pesos mexicanos e incluyen 16% de IVA
+				</p>
 				<Pizza img={pizzaPastaEspImg} />
 			</>
 		);
@@ -395,6 +439,9 @@ function MenuList({ showHome, setShowHome }) {
 					food='desserts'
 					setDesserts={setDesserts}
 				/>
+				<p className='taxInfo'>
+					all prices are in mexican pesos and include 16% TAX FEE
+				</p>
 				<Desserts img={dessertsIngImg} />
 			</>
 		);
@@ -407,6 +454,9 @@ function MenuList({ showHome, setShowHome }) {
 					food='desserts'
 					setDesserts={setDesserts}
 				/>
+				<p className='taxInfo'>
+					Los precios son en pesos mexicanos e incluyen 16% de IVA
+				</p>
 				<Desserts img={dessertsEspImg} />
 			</>
 		);

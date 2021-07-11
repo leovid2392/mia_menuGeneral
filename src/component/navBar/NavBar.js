@@ -59,10 +59,10 @@ function NavBar({
 
 	return (
 		<div className='nav'>
-			<button onClick={handleHome}>
+			<button className='nav_icon' onClick={handleHome}>
 				<AiOutlineHome />
 			</button>
-			<button onClick={handleMenu}>
+			<button className='nav_icon' onClick={handleMenu}>
 				<FaBars />
 			</button>
 		</div>
