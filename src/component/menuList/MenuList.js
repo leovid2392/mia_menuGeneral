@@ -415,13 +415,15 @@ function MenuList({ showHome, setShowHome }) {
 	if (!english) {
 		return (
 			<section className='menuList'>
+				<div className='menuList_nav'>
+					<button className='menuList_icon' onClick={handleMenu}>
+						<AiOutlineClose />
+					</button>
+					<button className='menuList_lenguage' onClick={handleEnglish}>
+						english
+					</button>
+				</div>
 				<div className='menuList_btnContainer'>
-					<div>
-						<button className='menuList_icon' onClick={handleMenu}>
-							<AiOutlineClose />
-						</button>
-						<button onClick={handleEnglish}>english</button>
-					</div>
 					<div className='menuList_btns'>
 						<button onClick={handleDesserts}> postres </button>
 						<button onClick={handleBreakFast}> desayunos </button>
@@ -441,13 +443,15 @@ function MenuList({ showHome, setShowHome }) {
 	} else {
 		return (
 			<section className='menuList'>
+				<div className='menuList_nav'>
+					<button className='menuList_icon' onClick={handleMenu}>
+						<AiOutlineClose />
+					</button>
+					<button className='menuList_lenguage' onClick={handleEnglish}>
+						español
+					</button>
+				</div>
 				<div className='menuList_btnContainer'>
-					<div>
-						<button className='menuList_icon' onClick={handleMenu}>
-							<AiOutlineClose />
-						</button>
-						<button onClick={handleEnglish}>english</button>
-					</div>
 					<div className='menuList_btns'>
 						<button onClick={handleDesserts}> desserts </button>
 						<button onClick={handleBreakFast}> Breakfast </button>
@@ -465,32 +469,6 @@ function MenuList({ showHome, setShowHome }) {
 			</section>
 		);
 	}
-
-	// return (
-	// 	<section className='menuList'>
-	// 		<div className='menuList_btnContainer'>
-	// 			<div>
-	// 				<button className='menuList_icon' onClick={handleMenu}>
-	// 					<AiOutlineClose />
-	// 				</button>
-	// 				<button>english</button>
-	// 			</div>
-	// 			<div className='menuList_btns'>
-	// 				<button onClick={handleDesserts}> postres </button>
-	// 				<button onClick={handleBreakFast}> desayunos </button>
-	// 				<button onClick={handleLunch}> lunch </button>
-	// 				<button onClick={handleDinner}> cena </button>
-	// 			</div>
-	// 			<div className='menuList_btns'>
-	// 				<button onClick={handleVegan}> vegano </button>
-	// 				<button onClick={handlePizza}> pizza & pasta </button>
-
-	// 				<button onClick={handleDrinks}> bebidas</button>
-	// 				<button onClick={handleWines}> vinos</button>
-	// 			</div>
-	// 		</div>
-	// 	</section>
-	// );
 }
 
 export default MenuList;
