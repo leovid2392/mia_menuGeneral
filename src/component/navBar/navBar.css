@@ -9,7 +9,7 @@
     z-index: 999;
 	background-color:#fdfdfd;
 	padding-top:5px;
-	box-shadow: 2px 5px 15px hsl(0deg 100% 50% / 17%)
+	box-shadow: 2px 5px 15px #f1f1f1;
 	/* text-align: start; */
 }
 
