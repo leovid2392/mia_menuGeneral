@@ -4,6 +4,23 @@ import { AiOutlineClose } from "react-icons/ai";
 
 // <<<<<<<<<<<<<<<<<<<    MENU IMAGES    >>>>>>>>>>>>>>>>>>>>>>
 
+// wines images
+
+import wines1img from "../../assets/wines_ing1.jpg";
+import wines2img from "../../assets/wines_ing2.jpg";
+import wines3img from "../../assets/wines_ing3.jpg";
+import wines4img from "../../assets/wines_ing4.jpg";
+import wines5img from "../../assets/wines_ing5.jpg";
+import wines6img from "../../assets/wines_ing6.jpg";
+import wines7img from "../../assets/wines_ing7.jpg";
+import wines8img from "../../assets/wines_ing8.jpg";
+import wines9img from "../../assets/wines_ing9.jpg";
+import wines10img from "../../assets/wines_ing10.jpg";
+import wines11img from "../../assets/wines_ing11.jpg";
+import wines12img from "../../assets/wines_ing12.jpg";
+import wines13img from "../../assets/wines_ing13.jpg";
+import wines14img from "../../assets/wines_ing14.jpg";
+
 // drinks images
 import bebidas1Img from "../../assets/bebidas1.png";
 import bebidas1_2Img from "../../assets/bebidas1_2.png";
@@ -199,7 +216,22 @@ function MenuList({ showHome, setShowHome }) {
 				<p className='taxInfo'>
 					all prices are in mexican pesos and include 16% TAX FEE
 				</p>
-				<Wines />
+				<Wines
+					img1={wines1img}
+					img2={wines2img}
+					img3={wines3img}
+					img4={wines4img}
+					img5={wines5img}
+					img6={wines6img}
+					img7={wines7img}
+					img8={wines8img}
+					img9={wines9img}
+					img10={wines10img}
+					img11={wines11img}
+					img12={wines12img}
+					img13={wines13img}
+					img14={wines14img}
+				/>
 			</>
 		);
 	} else if (wines) {
@@ -215,7 +247,22 @@ function MenuList({ showHome, setShowHome }) {
 					Los precios son en pesos mexicanos e incluyen 16% de IVA
 				</p>
 
-				<Wines />
+				<Wines
+					img1={wines1img}
+					img2={wines2img}
+					img3={wines3img}
+					img4={wines4img}
+					img5={wines5img}
+					img6={wines6img}
+					img7={wines7img}
+					img8={wines8img}
+					img9={wines9img}
+					img10={wines10img}
+					img11={wines11img}
+					img12={wines12img}
+					img13={wines13img}
+					img14={wines14img}
+				/>
 			</>
 		);
 	}
@@ -470,22 +517,22 @@ function MenuList({ showHome, setShowHome }) {
 						<AiOutlineClose />
 					</button>
 					<button className='menuList_lenguage' onClick={handleEnglish}>
-						english
+						English
 					</button>
 				</div>
 				<div className='menuList_btnContainer'>
 					<div className='menuList_btns'>
-						<button onClick={handleDesserts}> postres </button>
-						<button onClick={handleBreakFast}> desayunos </button>
-						<button onClick={handleLunch}> lunch </button>
-						<button onClick={handleDinner}> cena </button>
+						<button onClick={handleDesserts}> Postres </button>
+						<button onClick={handleBreakFast}> Desayunos </button>
+						<button onClick={handleLunch}> Lunch </button>
+						<button onClick={handleDinner}> Cena </button>
 					</div>
 					<div className='menuList_btns'>
-						<button onClick={handleVegan}> vegano </button>
-						<button onClick={handlePizza}> pizza & pasta </button>
+						<button onClick={handleVegan}> Vegano </button>
+						<button onClick={handlePizza}> Pizza & Pasta </button>
 
-						<button onClick={handleDrinks}> bebidas</button>
-						<button onClick={handleWines}> vinos</button>
+						<button onClick={handleDrinks}> Bebidas</button>
+						<button onClick={handleWines}> Vinos</button>
 					</div>
 				</div>
 			</section>
@@ -498,12 +545,12 @@ function MenuList({ showHome, setShowHome }) {
 						<AiOutlineClose />
 					</button>
 					<button className='menuList_lenguage' onClick={handleEnglish}>
-						español
+						Español
 					</button>
 				</div>
 				<div className='menuList_btnContainer'>
 					<div className='menuList_btns'>
-						<button onClick={handleDesserts}> desserts </button>
+						<button onClick={handleDesserts}> Desserts </button>
 						<button onClick={handleBreakFast}> Breakfast </button>
 						<button onClick={handleLunch}> Lunch </button>
 						<button onClick={handleDinner}> Dinner </button>
