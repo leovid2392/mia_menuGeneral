@@ -2,7 +2,7 @@ import React from "react";
 
 import "./drinks.css";
 
-function Drinks({ img1, img1_2, img2, img2_2, img3, img3_2, img4, img4_2 }) {
+function Drinks({ img1, img1_2, img2, img2_2, img3, img3_2}) {
 	return (
 		<div className='drinks'>
 			<figure className='menu_img'>
@@ -23,12 +23,7 @@ function Drinks({ img1, img1_2, img2, img2_2, img3, img3_2, img4, img4_2 }) {
 			<figure className='menu_img'>
 				<img src={img3_2} alt='menu vodka' />
 			</figure>
-			<figure className='menu_img'>
-				<img src={img4} alt='menu vodka' />
-			</figure>
-			<figure className='menu_img'>
-				<img src={img4_2} alt='menu vodka' />
-			</figure>
+			
 		</div>
 	);
 }

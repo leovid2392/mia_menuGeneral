@@ -22,14 +22,23 @@ import wines13img from "../../assets/wines_ing13.jpg";
 import wines14img from "../../assets/wines_ing14.jpg";
 
 // drinks images
-import bebidas1Img from "../../assets/bebidas1.png";
-import bebidas1_2Img from "../../assets/bebidas1_2.png";
-import bebidas2Img from "../../assets/bebidas2.png";
-import bebidas2_2Img from "../../assets/bebidas2_2.png";
-import bebidas3Img from "../../assets/bebidas3.png";
-import bebidas3_2Img from "../../assets/bebidas3_2.png";
-import bebidas4Img from "../../assets/bebidas4.png";
-import bebidas4_2Img from "../../assets/bebidas4_2.png";
+// import bebidas1Img from "../../assets/bebidas1.png";
+// import bebidas1_2Img from "../../assets/bebidas1_2.png";
+// import bebidas2Img from "../../assets/bebidas2.png";
+// import bebidas2_2Img from "../../assets/bebidas2_2.png";
+// import bebidas3Img from "../../assets/bebidas3.png";
+// import bebidas3_2Img from "../../assets/bebidas3_2.png";
+// import bebidas4Img from "../../assets/bebidas4.png";
+// import bebidas4_2Img from "../../assets/bebidas4_2.png";
+
+import bebidas1Img from "../../assets/bebidas1.jpg";
+import bebidas1_2Img from "../../assets/bebidas1_2.jpg";
+import bebidas2Img from "../../assets/bebidas2.jpg";
+import bebidas2_2Img from "../../assets/bebidas2_2.jpg";
+import bebidas3Img from "../../assets/bebidas3.jpg";
+import bebidas3_2Img from "../../assets/bebidas3_2.jpg";
+// import bebidas4Img from "../../assets/bebidas4.png";
+// import bebidas4_2Img from "../../assets/bebidas4_2.png";
 
 // pizza and pasta images
 
@@ -286,8 +295,8 @@ function MenuList({ showHome, setShowHome }) {
 					img2_2={bebidas2_2Img}
 					img3={bebidas3Img}
 					img3_2={bebidas3_2Img}
-					img4={bebidas4Img}
-					img4_2={bebidas4_2Img}
+					// img4={bebidas4Img}
+					// img4_2={bebidas4_2Img}
 				/>
 			</>
 		);
@@ -312,8 +321,8 @@ function MenuList({ showHome, setShowHome }) {
 					img2_2={bebidas2_2Img}
 					img3={bebidas3Img}
 					img3_2={bebidas3_2Img}
-					img4={bebidas4Img}
-					img4_2={bebidas4_2Img}
+					// img4={bebidas4Img}
+					// img4_2={bebidas4_2Img}
 				/>
 			</>
 		);
