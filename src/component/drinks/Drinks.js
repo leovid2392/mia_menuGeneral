@@ -2,10 +2,11 @@ import React from "react";
 
 import "./drinks.css";
 
-function Drinks({ img1, img1_2, img2, img2_2, img3, img3_2}) {
+function Drinks({ img1, img1_2, img2, img2_2, img3, img3_2 }) {
 	return (
 		<div className='drinks'>
 			<figure className='menu_img'>
+				<p className='drinks_info'>Copeo de 2 Oz / 2 Oz. CUP</p>
 				<img src={img1} alt='menu vodka' />
 			</figure>
 			<figure className='menu_img'>
@@ -23,7 +24,6 @@ function Drinks({ img1, img1_2, img2, img2_2, img3, img3_2}) {
 			<figure className='menu_img'>
 				<img src={img3_2} alt='menu vodka' />
 			</figure>
-			
 		</div>
 	);
 }

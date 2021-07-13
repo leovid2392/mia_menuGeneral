@@ -22,14 +22,6 @@ import wines13img from "../../assets/wines_ing13.jpg";
 import wines14img from "../../assets/wines_ing14.jpg";
 
 // drinks images
-// import bebidas1Img from "../../assets/bebidas1.png";
-// import bebidas1_2Img from "../../assets/bebidas1_2.png";
-// import bebidas2Img from "../../assets/bebidas2.png";
-// import bebidas2_2Img from "../../assets/bebidas2_2.png";
-// import bebidas3Img from "../../assets/bebidas3.png";
-// import bebidas3_2Img from "../../assets/bebidas3_2.png";
-// import bebidas4Img from "../../assets/bebidas4.png";
-// import bebidas4_2Img from "../../assets/bebidas4_2.png";
 
 import bebidas1Img from "../../assets/bebidas1.jpg";
 import bebidas1_2Img from "../../assets/bebidas1_2.jpg";
@@ -37,8 +29,6 @@ import bebidas2Img from "../../assets/bebidas2.jpg";
 import bebidas2_2Img from "../../assets/bebidas2_2.jpg";
 import bebidas3Img from "../../assets/bebidas3.jpg";
 import bebidas3_2Img from "../../assets/bebidas3_2.jpg";
-// import bebidas4Img from "../../assets/bebidas4.png";
-// import bebidas4_2Img from "../../assets/bebidas4_2.png";
 
 // pizza and pasta images
 
@@ -70,6 +60,11 @@ import veganIngImg from "../../assets/vegan_ing.png";
 import breakFastEspImg from "../../assets/breakFast_esp.png";
 import breakFastIngImg from "../../assets/breakFast_ing.jpg";
 
+// cocktails images
+
+import cocktailsEspImg from "../../assets/cocktails_esp.jpg";
+import cocktailsIngImg from "../../assets/cocktails_ing.jpg";
+
 // <<<<<<<<<<<<<<<<<<<    MENU IMAGES    >>>>>>>>>>>>>>>>>>>>>>
 
 import NavBar from "../navBar/NavBar";
@@ -81,6 +76,7 @@ import Pizza from "../pizza/Pizza";
 import Lunch from "../lunch/Lunch";
 import Wines from "../wines/Wines";
 import BreakFast from "../breakFast/BreakFast";
+import Cocktails from "../cocktails/Cocktails";
 
 import "./menuList.css";
 
@@ -94,10 +90,25 @@ function MenuList({ showHome, setShowHome }) {
 	const [vegan, setVegan] = useState(false);
 	const [breakFast, setBreakFast] = useState(false);
 	const [pizza, setPizza] = useState(false);
+	const [cocktails, setCocktails] = useState(false);
 
 	const handleMenu = () => {
 		if (!showHome) {
 			setShowHome(true);
+		}
+	};
+
+	const handleCocktails = () => {
+		if (!pizza) {
+			setCocktails(true);
+			setPizza(false);
+			setBreakFast(false);
+			setVegan(false);
+			setDesserts(false);
+			setWines(false);
+			setDrinks(false);
+			setDinner(false);
+			setLunch(false);
 		}
 	};
 
@@ -111,6 +122,7 @@ function MenuList({ showHome, setShowHome }) {
 			setDrinks(false);
 			setDinner(false);
 			setLunch(false);
+			setCocktails(false);
 		}
 	};
 
@@ -124,6 +136,7 @@ function MenuList({ showHome, setShowHome }) {
 			setDrinks(false);
 			setDinner(false);
 			setLunch(false);
+			setCocktails(false);
 		}
 	};
 
@@ -137,6 +150,7 @@ function MenuList({ showHome, setShowHome }) {
 			setDrinks(false);
 			setDinner(false);
 			setLunch(false);
+			setCocktails(false);
 		}
 	};
 
@@ -150,6 +164,7 @@ function MenuList({ showHome, setShowHome }) {
 			setDrinks(false);
 			setDinner(false);
 			setLunch(false);
+			setCocktails(false);
 		}
 	};
 
@@ -163,6 +178,7 @@ function MenuList({ showHome, setShowHome }) {
 			setDrinks(false);
 			setDinner(false);
 			setLunch(false);
+			setCocktails(false);
 		}
 	};
 
@@ -176,6 +192,7 @@ function MenuList({ showHome, setShowHome }) {
 			setWines(false);
 			setDinner(false);
 			setLunch(false);
+			setCocktails(false);
 		}
 	};
 
@@ -189,6 +206,7 @@ function MenuList({ showHome, setShowHome }) {
 			setWines(false);
 			setDrinks(false);
 			setLunch(false);
+			setCocktails(false);
 		}
 	};
 
@@ -202,6 +220,7 @@ function MenuList({ showHome, setShowHome }) {
 			setWines(false);
 			setDrinks(false);
 			setDinner(false);
+			setCocktails(false);
 		}
 	};
 
@@ -212,6 +231,39 @@ function MenuList({ showHome, setShowHome }) {
 			setEnglish(false);
 		}
 	};
+
+	if (english && cocktails) {
+		return (
+			<>
+				<NavBar
+					setShowHome={setShowHome}
+					showHome={showHome}
+					food='cocktails'
+					setCocktails={setCocktails}
+				/>
+				<p className='taxInfo'>
+					all prices are in mexican pesos and include 16% TAX FEE
+				</p>
+				<Cocktails img={cocktailsIngImg} />
+			</>
+		);
+	} else if (cocktails) {
+		return (
+			<>
+				<NavBar
+					setShowHome={setShowHome}
+					showHome={showHome}
+					food='cocktails'
+					setCocktails={setCocktails}
+				/>
+				<p className='taxInfo'>
+					Los precios son en pesos mexicanos e incluyen 16% de IVA
+				</p>
+
+				<Cocktails img={cocktailsEspImg} />
+			</>
+		);
+	}
 
 	if (english && wines) {
 		return (
@@ -295,8 +347,6 @@ function MenuList({ showHome, setShowHome }) {
 					img2_2={bebidas2_2Img}
 					img3={bebidas3Img}
 					img3_2={bebidas3_2Img}
-					// img4={bebidas4Img}
-					// img4_2={bebidas4_2Img}
 				/>
 			</>
 		);
@@ -321,8 +371,6 @@ function MenuList({ showHome, setShowHome }) {
 					img2_2={bebidas2_2Img}
 					img3={bebidas3Img}
 					img3_2={bebidas3_2Img}
-					// img4={bebidas4Img}
-					// img4_2={bebidas4_2Img}
 				/>
 			</>
 		);
@@ -535,6 +583,7 @@ function MenuList({ showHome, setShowHome }) {
 						<button onClick={handleBreakFast}> Desayunos </button>
 						<button onClick={handleLunch}> Lunch </button>
 						<button onClick={handleDinner}> Cena </button>
+						<button onClick={handleCocktails}> Cocktails </button>
 					</div>
 					<div className='menuList_btns'>
 						<button onClick={handleVegan}> Vegano </button>
@@ -563,6 +612,7 @@ function MenuList({ showHome, setShowHome }) {
 						<button onClick={handleBreakFast}> Breakfast </button>
 						<button onClick={handleLunch}> Lunch </button>
 						<button onClick={handleDinner}> Dinner </button>
+						<button onClick={handleCocktails}> Cocktails </button>
 					</div>
 					<div className='menuList_btns'>
 						<button onClick={handleVegan}> Vegan </button>

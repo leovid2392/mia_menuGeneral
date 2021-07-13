@@ -16,6 +16,7 @@ function NavBar({
 	setVegan,
 	setPizza,
 	setDesserts,
+	setCocktails,
 }) {
 	const handleHome = () => {
 		if (!showHome) {
@@ -54,6 +55,9 @@ function NavBar({
 
 		if (food === "desserts") {
 			setDesserts(false);
+		}
+		if (food === "cocktails") {
+			setCocktails(false);
 		}
 	};
 
