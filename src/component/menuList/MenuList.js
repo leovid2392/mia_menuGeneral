@@ -101,126 +101,126 @@ function MenuList({ showHome, setShowHome }) {
 	const handleCocktails = () => {
 		if (!pizza) {
 			setCocktails(true);
-			setPizza(false);
-			setBreakFast(false);
-			setVegan(false);
-			setDesserts(false);
-			setWines(false);
-			setDrinks(false);
-			setDinner(false);
-			setLunch(false);
+			// setPizza(false);
+			// setBreakFast(false);
+			// setVegan(false);
+			// setDesserts(false);
+			// setWines(false);
+			// setDrinks(false);
+			// setDinner(false);
+			// setLunch(false);
 		}
 	};
 
 	const handlePizza = () => {
 		if (!pizza) {
 			setPizza(true);
-			setBreakFast(false);
-			setVegan(false);
-			setDesserts(false);
-			setWines(false);
-			setDrinks(false);
-			setDinner(false);
-			setLunch(false);
-			setCocktails(false);
+			// setBreakFast(false);
+			// setVegan(false);
+			// setDesserts(false);
+			// setWines(false);
+			// setDrinks(false);
+			// setDinner(false);
+			// setLunch(false);
+			// setCocktails(false);
 		}
 	};
 
 	const handleBreakFast = () => {
 		if (!breakFast) {
 			setBreakFast(true);
-			setPizza(false);
-			setVegan(false);
-			setDesserts(false);
-			setWines(false);
-			setDrinks(false);
-			setDinner(false);
-			setLunch(false);
-			setCocktails(false);
+			// setPizza(false);
+			// setVegan(false);
+			// setDesserts(false);
+			// setWines(false);
+			// setDrinks(false);
+			// setDinner(false);
+			// setLunch(false);
+			// setCocktails(false);
 		}
 	};
 
 	const handleVegan = () => {
 		if (!vegan) {
 			setVegan(true);
-			setPizza(false);
-			setBreakFast(false);
-			setDesserts(false);
-			setWines(false);
-			setDrinks(false);
-			setDinner(false);
-			setLunch(false);
-			setCocktails(false);
+			// setPizza(false);
+			// setBreakFast(false);
+			// setDesserts(false);
+			// setWines(false);
+			// setDrinks(false);
+			// setDinner(false);
+			// setLunch(false);
+			// setCocktails(false);
 		}
 	};
 
 	const handleDesserts = () => {
 		if (!desserts) {
 			setDesserts(true);
-			setPizza(false);
-			setBreakFast(false);
-			setVegan(false);
-			setWines(false);
-			setDrinks(false);
-			setDinner(false);
-			setLunch(false);
-			setCocktails(false);
+			// setPizza(false);
+			// setBreakFast(false);
+			// setVegan(false);
+			// setWines(false);
+			// setDrinks(false);
+			// setDinner(false);
+			// setLunch(false);
+			// setCocktails(false);
 		}
 	};
 
 	const handleWines = () => {
 		if (!wines) {
 			setWines(true);
-			setPizza(false);
-			setBreakFast(false);
-			setVegan(false);
-			setDesserts(false);
-			setDrinks(false);
-			setDinner(false);
-			setLunch(false);
-			setCocktails(false);
+			// setPizza(false);
+			// setBreakFast(false);
+			// setVegan(false);
+			// setDesserts(false);
+			// setDrinks(false);
+			// setDinner(false);
+			// setLunch(false);
+			// setCocktails(false);
 		}
 	};
 
 	const handleDrinks = () => {
 		if (!drinks) {
 			setDrinks(true);
-			setPizza(false);
-			setBreakFast(false);
-			setVegan(false);
-			setDesserts(false);
-			setWines(false);
-			setDinner(false);
-			setLunch(false);
-			setCocktails(false);
+			// setPizza(false);
+			// setBreakFast(false);
+			// setVegan(false);
+			// setDesserts(false);
+			// setWines(false);
+			// setDinner(false);
+			// setLunch(false);
+			// setCocktails(false);
 		}
 	};
 
 	const handleDinner = () => {
 		if (!dinner) {
 			setDinner(true);
-			setPizza(false);
-			setBreakFast(false);
-			setVegan(false);
-			setDesserts(false);
-			setWines(false);
-			setDrinks(false);
-			setLunch(false);
-			setCocktails(false);
+			// setPizza(false);
+			// setBreakFast(false);
+			// setVegan(false);
+			// setDesserts(false);
+			// setWines(false);
+			// setDrinks(false);
+			// setLunch(false);
+			// setCocktails(false);
 		}
 	};
 
 	const handleLunch = () => {
 		if (!lunch) {
 			setLunch(true);
-			setPizza(false);
-			setBreakFast(false);
-			setVegan(false);
-			setDesserts(false);
-			setWines(false);
-			setDrinks(false);
-			setDinner(false);
-			setCocktails(false);
+			// setPizza(false);
+			// setBreakFast(false);
+			// setVegan(false);
+			// setDesserts(false);
+			// setWines(false);
+			// setDrinks(false);
+			// setDinner(false);
+			// setCocktails(false);
 		}
 	};
 
