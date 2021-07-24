@@ -1,5 +1,6 @@
 {
 	"name": "mia_menu",
+	"homepage": "https://miatulum.com/qr_menu",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
