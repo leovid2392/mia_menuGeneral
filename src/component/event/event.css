@@ -1,0 +1,35 @@
+.sliderContainer {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.sliderContainer a {
+	text-decoration: none;
+	color: black;
+}
+/* .icon_container {
+	height: 50px;
+	width: 50px;
+	border: 1px solid red;
+} */
+
+.slider_icon-prev {
+	height: 50px;
+	font-size: 40px;
+	position: absolute;
+	left: -30px;
+	border-radius: 30px;
+	/* background-color: #ffffff61; */
+	border-style: none;
+}
+
+.slider_icon-next {
+	height: 50px;
+	width: 50px;
+	font-size: 40px;
+	position: absolute;
+	right: -30px;
+	border-style: none;
+	border-radius: 30px;
+}

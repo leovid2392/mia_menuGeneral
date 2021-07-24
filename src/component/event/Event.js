@@ -8,10 +8,11 @@ import event4 from "../../assets/slider/august_07.jpeg";
 import { GrFormPrevious } from "react-icons/gr";
 import { GrFormNext } from "react-icons/gr";
 
+import "./event.css";
+
 function Event() {
-	const [event, setEvent] = useState(events);
 	const [index, setIndex] = useState(0);
-	const { id, title, image, url } = events[index];
+	const { title, image, url } = events[index];
 
 	const checkNumber = (number) => {
 		if (number > events.length - 1) {
@@ -38,8 +39,10 @@ function Event() {
 	};
 	return (
 		<section className='sliderContainer'>
-			<button onClick={handlePrevEvent}>
-				<GrFormPrevious />
+			<button className='slider_icon-prev' onClick={handlePrevEvent}>
+				<div className='icon_container'>
+					<GrFormPrevious />
+				</div>
 			</button>
 			<a href={url} target='_blank' rel='noreferrer'>
 				<figure className='slider_imgContainer'>
@@ -49,8 +52,10 @@ function Event() {
 					</div>
 				</figure>
 			</a>
-			<button onClick={handleNextEvent}>
-				<GrFormNext />
+			<button className='slider_icon-next' onClick={handleNextEvent}>
+				<div className='icon_container'>
+					<GrFormNext />
+				</div>
 			</button>
 		</section>
 	);
