@@ -44,14 +44,14 @@ function Event() {
 					<GrFormPrevious />
 				</div>
 			</button>
-			<a href={url} target='_blank' rel='noreferrer'>
-				<figure className='slider_imgContainer'>
-					<img src={image} alt={title} />
-					<div className='slider_titleContainer'>
+			{/* <a href={url} target='_blank' rel='noreferrer'> */}
+			<figure className='slider_imgContainer'>
+				<img src={image} alt={title} />
+				{/* <div className='slider_titleContainer'>
 						<h4 className='slider_title'>Click me to buy</h4>
-					</div>
-				</figure>
-			</a>
+					</div> */}
+			</figure>
+			{/* </a> */}
 			<button className='slider_icon-next' onClick={handleNextEvent}>
 				<div className='icon_container'>
 					<GrFormNext />
