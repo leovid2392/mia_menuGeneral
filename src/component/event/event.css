@@ -1,0 +1,13 @@
+.sliderContainer {
+	margin: 0 auto;
+	/* margin-top: 4rem; */
+	/* width: 80vw; */
+	width: 300px;
+	/* have to have a height */
+	height: 450px;
+	max-width: 800px;
+	text-align: center;
+	position: relative;
+	display: flex;
+	/* overflow: hidden; */
+}

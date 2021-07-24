@@ -8,6 +8,8 @@ import event4 from "../../assets/slider/august_07.jpeg";
 import { GrFormPrevious } from "react-icons/gr";
 import { GrFormNext } from "react-icons/gr";
 
+import "./event.css";
+
 function Event() {
 	const [event, setEvent] = useState(events);
 	const [index, setIndex] = useState(0);
