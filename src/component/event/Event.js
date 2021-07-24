@@ -11,7 +11,6 @@ import { GrFormNext } from "react-icons/gr";
 function Event() {
 	const [event, setEvent] = useState(events);
 	const [index, setIndex] = useState(0);
-	const { id, title, image, url } = events[index];
 
 	const checkNumber = (number) => {
 		if (number > events.length - 1) {
@@ -38,7 +37,29 @@ function Event() {
 	};
 	return (
 		<section className='sliderContainer'>
-			<button onClick={handlePrevEvent}>
+			{events.map((item, itemIndex) => {
+				const { id, url, title, image } = item;
+
+				return (
+					<a key={id} href={url} target='_blank' rel='noreferrer'>
+						<figure className='slider_imgContainer'>
+							<img src={image} alt={title} />
+							<div className='slider_titleContainer'>
+								<h4 className='slider_title'>Click me to buy</h4>
+							</div>
+						</figure>
+					</a>
+				);
+			})}
+
+			<button>
+				<GrFormPrevious />
+			</button>
+
+			<button>
+				<GrFormNext />
+			</button>
+			{/* <button onClick={handlePrevEvent}>
 				<GrFormPrevious />
 			</button>
 			<a href={url} target='_blank' rel='noreferrer'>
@@ -51,7 +72,7 @@ function Event() {
 			</a>
 			<button onClick={handleNextEvent}>
 				<GrFormNext />
-			</button>
+			</button> */}
 		</section>
 	);
 }
