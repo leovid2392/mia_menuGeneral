@@ -27,10 +27,15 @@
 	color: white;
 }
 .home_sliderContainer {
-	/* text-align: center; */
+	text-align: center;
 	display: flex;
 	justify-content: center;
 	position: relative;
+}
+.home_sliderContainer a {
+	text-decoration: none;
+	color: black;
+	display: block;
 }
 
 /* .home_sliderContainer img {
@@ -40,8 +45,10 @@
 
 .slider_imgContainer {
 	width: 100%;
-
 	margin: 0px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
 }
 
 .slider_imgContainer img {

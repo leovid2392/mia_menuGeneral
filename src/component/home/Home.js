@@ -23,12 +23,17 @@ function Home({ showHome, setShowHome }) {
 			</button>
 
 			<div className='home_sliderContainer'>
-				<div className='slider_titleContainer'>
-					<h4 className='slider_title'>Click me to buy</h4>
-				</div>
-				<a href='https://www.youtube.com/' target='_blank'>
+				{/* <a href='https://www.youtube.com/' target='_blank' rel='noreferrer'>
+					<div className='slider_titleContainer'>
+						<h4 className='slider_title'>Click me to buy</h4>
+					</div>
+				</a> */}
+				<a href='https://www.youtube.com/' target='_blank' rel='noreferrer'>
 					<figure className='slider_imgContainer'>
 						<img src={slider1} alt='happy hour' />
+						<div className='slider_titleContainer'>
+							<h4 className='slider_title'>Click me to buy</h4>
+						</div>
 					</figure>
 				</a>
 			</div>
