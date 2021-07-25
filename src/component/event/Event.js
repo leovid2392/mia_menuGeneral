@@ -28,14 +28,14 @@ function Event() {
 		}
 	}, [index, event]);
 
-	// useEffect(() => {
-	// 	let slider = setTimeout(() => {
-	// 		setIndex(index + 1);
-	// 	}, 4000);
-	// 	return () => {
-	// 		clearInterval(slider);
-	// 	};
-	// }, [index]);
+	useEffect(() => {
+		let slider = setTimeout(() => {
+			setIndex(index + 1);
+		}, 4000);
+		return () => {
+			clearInterval(slider);
+		};
+	}, [index]);
 
 	const handlePrevEvent = () => {
 		setIndex(index - 1);
@@ -74,25 +74,25 @@ function Event() {
 const events = [
 	{
 		id: 1,
-		url: "#",
+		url: "https://www.ticketfairy.com/event/hyenah-25jul2021/?r=901553&utm_source=&utm_campaign=",
 		title: "hyenah sam by sparacio, special dinner",
 		image: event1,
 	},
 	{
 		id: 2,
-		url: "#",
+		url: "https://www.ticketfairy.com/event/paulor-31jul2021/",
 		title: "paulor neo human, special dinner",
 		image: event2,
 	},
 	{
 		id: 3,
-		url: "#",
+		url: "https://www.ticketfairy.com/event/whomadewho-4aug2021/",
 		title: "who made who by sam sparacio, special dinner",
 		image: event3,
 	},
 	{
 		id: 4,
-		url: "#",
+		url: "https://www.ticketfairy.com/event/mathame-7aug2021/",
 		title: "mathame lyke neo human, special dinner",
 		image: event4,
 	},
