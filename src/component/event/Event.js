@@ -54,11 +54,11 @@ function Event() {
 				);
 			})}
 
-			<button>
+			<button className='slider_prevBtn'>
 				<GrFormPrevious />
 			</button>
 
-			<button>
+			<button className='slider_nextBtn'>
 				<GrFormNext />
 			</button>
 			{/* <button onClick={handlePrevEvent}>

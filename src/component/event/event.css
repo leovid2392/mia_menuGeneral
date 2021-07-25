@@ -11,3 +11,17 @@
 	display: flex;
 	/* overflow: hidden; */
 }
+
+.slider_prevBtn {
+	left: 0;
+}
+
+.slider_nextBtn {
+	right: 0;
+}
+
+.slider_prevBtn,
+.slider_nextBtn {
+	position: absolute;
+	top: 100px;
+}
