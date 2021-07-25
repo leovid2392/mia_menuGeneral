@@ -5,8 +5,10 @@ import event2 from "../../assets/slider/july_31.jpeg";
 import event3 from "../../assets/slider/august_04.jpeg";
 import event4 from "../../assets/slider/august_07.jpeg";
 
-import { GrFormPrevious } from "react-icons/gr";
-import { GrFormNext } from "react-icons/gr";
+// import { GrFormPrevious } from "react-icons/gr";
+import { FiChevronLeft } from "react-icons/fi";
+// import { GrFormNext } from "react-icons/gr";
+import { FiChevronRight } from "react-icons/fi";
 
 import Slide from "../slide/Slide";
 
@@ -59,11 +61,11 @@ function Event() {
 			})}
 
 			<button className='slider_prevBtn' onClick={handlePrevEvent}>
-				<GrFormPrevious />
+				<FiChevronLeft />
 			</button>
 
 			<button className='slider_nextBtn' onClick={handleNextEvent}>
-				<GrFormNext />
+				<FiChevronRight />
 			</button>
 		</section>
 	);
