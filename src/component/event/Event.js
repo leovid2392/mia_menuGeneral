@@ -74,26 +74,21 @@ function Event() {
 }
 
 const events = [
+	
 	{
 		id: 1,
-		url: "https://www.ticketfairy.com/event/hyenah-25jul2021/?r=901553&utm_source=&utm_campaign=",
-		title: "hyenah sam by sparacio, special dinner",
-		image: event1,
-	},
-	{
-		id: 2,
 		url: "https://www.ticketfairy.com/event/paulor-31jul2021/",
 		title: "paulor neo human, special dinner",
 		image: event2,
 	},
 	{
-		id: 3,
+		id: 2,
 		url: "https://www.ticketfairy.com/event/whomadewho-4aug2021/",
 		title: "who made who by sam sparacio, special dinner",
 		image: event3,
 	},
 	{
-		id: 4,
+		id: 3,
 		url: "https://www.ticketfairy.com/event/mathame-7aug2021/",
 		title: "mathame lyke neo human, special dinner",
 		image: event4,
