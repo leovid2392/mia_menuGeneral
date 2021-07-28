@@ -1,7 +1,6 @@
 import React from "react";
 
 import logo from "../../assets/logo_mia_by_selina.png";
-import slider1 from "../../assets/slider/july_25.jpeg";
 
 import Event from "../event/Event";
 

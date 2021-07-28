@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 
-import event1 from "../../assets/slider/july_25.jpeg";
-import event2 from "../../assets/slider/july_31.jpeg";
-import event3 from "../../assets/slider/august_04.jpeg";
-import event4 from "../../assets/slider/august_07.jpeg";
+import july_31 from "../../assets/slider/july_31.jpeg";
+import august_04 from "../../assets/slider/august_04.jpeg";
+import august_07 from "../../assets/slider/august_07.jpeg";
 
 // import { GrFormPrevious } from "react-icons/gr";
 import { FiChevronLeft } from "react-icons/fi";
@@ -74,24 +73,23 @@ function Event() {
 }
 
 const events = [
-	
 	{
 		id: 1,
 		url: "https://www.ticketfairy.com/event/paulor-31jul2021/",
 		title: "paulor neo human, special dinner",
-		image: event2,
+		image: july_31,
 	},
 	{
 		id: 2,
 		url: "https://www.ticketfairy.com/event/whomadewho-4aug2021/",
 		title: "who made who by sam sparacio, special dinner",
-		image: event3,
+		image: august_04,
 	},
 	{
 		id: 3,
 		url: "https://www.ticketfairy.com/event/mathame-7aug2021/",
 		title: "mathame lyke neo human, special dinner",
-		image: event4,
+		image: august_07,
 	},
 ];
 
