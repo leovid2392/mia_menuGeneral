@@ -73,20 +73,15 @@ function Event() {
 }
 
 const events = [
+	
 	{
 		id: 1,
-		url: "https://www.ticketfairy.com/event/paulor-31jul2021/",
-		title: "paulor neo human, special dinner",
-		image: july_31,
-	},
-	{
-		id: 2,
 		url: "https://www.ticketfairy.com/event/whomadewho-4aug2021/",
 		title: "who made who by sam sparacio, special dinner",
 		image: august_04,
 	},
 	{
-		id: 3,
+		id: 2,
 		url: "https://www.ticketfairy.com/event/mathame-7aug2021/",
 		title: "mathame lyke neo human, special dinner",
 		image: august_07,
