@@ -29,14 +29,14 @@ function Event() {
 		}
 	}, [index, event]);
 
-	useEffect(() => {
-		let slider = setTimeout(() => {
-			setIndex(index + 1);
-		}, 4000);
-		return () => {
-			clearInterval(slider);
-		};
-	}, [index]);
+	// useEffect(() => {
+	// 	let slider = setTimeout(() => {
+	// 		setIndex(index + 1);
+	// 	}, 4000);
+	// 	return () => {
+	// 		clearInterval(slider);
+	// 	};
+	// }, [index]);
 
 	const handlePrevEvent = () => {
 		setIndex(index - 1);
@@ -61,24 +61,23 @@ function Event() {
 				return <Slide show={show} position={position} />;
 			})}
 
-			<button className='slider_prevBtn' onClick={handlePrevEvent}>
+			{/* <button className='slider_prevBtn' onClick={handlePrevEvent}>
 				<FiChevronLeft />
 			</button>
 
 			<button className='slider_nextBtn' onClick={handleNextEvent}>
 				<FiChevronRight />
-			</button>
+			</button> */}
 		</section>
 	);
 }
 
 const events = [
-	
 	{
 		id: 1,
-		url: "https://www.ticketfairy.com/event/whomadewho-4aug2021/",
-		title: "who made who by sam sparacio, special dinner",
-		image: august_04,
+		url: "https://www.ticketfairy.com/event/mathame-7aug2021/",
+		title: "mathame lyke neo human, special dinner",
+		image: august_07,
 	},
 	{
 		id: 2,
