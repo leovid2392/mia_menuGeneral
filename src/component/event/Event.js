@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 
-import july_31 from "../../assets/slider/july_31.jpeg";
-import august_04 from "../../assets/slider/august_04.jpeg";
-import august_07 from "../../assets/slider/august_07.jpeg";
+import august_11 from "../../assets/slider/august_11.jpeg";
+import august_15 from "../../assets/slider/august_15.jpeg";
 
 // import { GrFormPrevious } from "react-icons/gr";
 import { FiChevronLeft } from "react-icons/fi";
@@ -29,14 +28,14 @@ function Event() {
 		}
 	}, [index, event]);
 
-	// useEffect(() => {
-	// 	let slider = setTimeout(() => {
-	// 		setIndex(index + 1);
-	// 	}, 4000);
-	// 	return () => {
-	// 		clearInterval(slider);
-	// 	};
-	// }, [index]);
+	useEffect(() => {
+		let slider = setTimeout(() => {
+			setIndex(index + 1);
+		}, 4000);
+		return () => {
+			clearInterval(slider);
+		};
+	}, [index]);
 
 	const handlePrevEvent = () => {
 		setIndex(index - 1);
@@ -61,13 +60,13 @@ function Event() {
 				return <Slide show={show} position={position} />;
 			})}
 
-			{/* <button className='slider_prevBtn' onClick={handlePrevEvent}>
+			<button className='slider_prevBtn' onClick={handlePrevEvent}>
 				<FiChevronLeft />
 			</button>
 
 			<button className='slider_nextBtn' onClick={handleNextEvent}>
 				<FiChevronRight />
-			</button> */}
+			</button>
 		</section>
 	);
 }
@@ -75,15 +74,16 @@ function Event() {
 const events = [
 	{
 		id: 1,
-		url: "https://www.ticketfairy.com/event/mathame-7aug2021/",
-		title: "mathame lyke neo human, special dinner",
-		image: august_07,
+		url: "#",
+		title:
+			"mystical sunset, music by; victoria engel, neo human, corcuera, balmori &valderrama, ugust 11th",
+		image: august_11,
 	},
 	{
 		id: 2,
-		url: "https://www.ticketfairy.com/event/mathame-7aug2021/",
-		title: "mathame lyke neo human, special dinner",
-		image: august_07,
+		url: "#",
+		title: "nic fanciulli, special dinner, august 15th",
+		image: august_15,
 	},
 ];
 
