@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import august_11 from "../../assets/slider/august_11.jpeg";
+import august_14 from "../../assets/slider/august_14.jpeg";
 import august_15 from "../../assets/slider/august_15.jpeg";
 
 // import { GrFormPrevious } from "react-icons/gr";
@@ -81,6 +82,12 @@ const events = [
 	},
 	{
 		id: 2,
+		url: "#",
+		title: "cabizbajo, special dinner, august 14th",
+		image: august_14,
+	},
+	{
+		id: 3,
 		url: "#",
 		title: "nic fanciulli, special dinner, august 15th",
 		image: august_15,
