@@ -75,20 +75,20 @@ function Event() {
 const events = [
 	{
 		id: 1,
-		url: "#",
+		url: "https://www.eventbrite.com.mx/e/mystical-sunset-tickets-166172232621",
 		title:
 			"mystical sunset, music by; victoria engel, neo human, corcuera, balmori &valderrama, ugust 11th",
 		image: august_11,
 	},
 	{
 		id: 2,
-		url: "#",
+		url: "https://www.ticketfairy.com/event/cabizbajo-14aug2021/",
 		title: "cabizbajo, special dinner, august 14th",
 		image: august_14,
 	},
 	{
 		id: 3,
-		url: "#",
+		url: "https://www.ticketfairy.com/event/nic-fanciulli-15aug2021/",
 		title: "nic fanciulli, special dinner, august 15th",
 		image: august_15,
 	},
