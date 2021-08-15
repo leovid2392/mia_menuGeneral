@@ -25,6 +25,7 @@
 	width: 300px;
 	background-color: #252525;
 	color: white;
+	cursor: pointer;
 }
 .home_sliderContainer {
 	text-align: center;

@@ -29,14 +29,14 @@ function Event() {
 		}
 	}, [index, event]);
 
-	useEffect(() => {
-		let slider = setTimeout(() => {
-			setIndex(index + 1);
-		}, 4000);
-		return () => {
-			clearInterval(slider);
-		};
-	}, [index]);
+	// useEffect(() => {
+	// 	let slider = setTimeout(() => {
+	// 		setIndex(index + 1);
+	// 	}, 4000);
+	// 	return () => {
+	// 		clearInterval(slider);
+	// 	};
+	// }, [index]);
 
 	const handlePrevEvent = () => {
 		setIndex(index - 1);
@@ -61,13 +61,13 @@ function Event() {
 				return <Slide show={show} position={position} />;
 			})}
 
-			<button className='slider_prevBtn' onClick={handlePrevEvent}>
+			{/* <button className='slider_prevBtn' onClick={handlePrevEvent}>
 				<FiChevronLeft />
 			</button>
 
 			<button className='slider_nextBtn' onClick={handleNextEvent}>
 				<FiChevronRight />
-			</button>
+			</button> */}
 		</section>
 	);
 }
@@ -75,9 +75,9 @@ function Event() {
 const events = [
 	{
 		id: 1,
-		url: "https://www.ticketfairy.com/event/cabizbajo-14aug2021/",
-		title: "cabizbajo, special dinner, august 14th",
-		image: august_14,
+		url: "https://www.ticketfairy.com/event/nic-fanciulli-15aug2021/",
+		title: "nic fanciulli, special dinner, august 15th",
+		image: august_15,
 	},
 	{
 		id: 2,
