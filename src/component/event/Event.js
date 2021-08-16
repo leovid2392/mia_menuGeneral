@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-import august_11 from "../../assets/slider/august_11.jpeg";
-import august_14 from "../../assets/slider/august_14.jpeg";
-import august_15 from "../../assets/slider/august_15.jpeg";
+// import august_11 from "../../assets/slider/august_11.jpeg";
+// import august_14 from "../../assets/slider/august_14.jpeg";
+// import august_15 from "../../assets/slider/august_15.jpeg";
+import deafult_img from "../../assets/slider/default.jpeg";
 
 // import { GrFormPrevious } from "react-icons/gr";
 import { FiChevronLeft } from "react-icons/fi";
@@ -75,15 +76,15 @@ function Event() {
 const events = [
 	{
 		id: 1,
-		url: "https://www.ticketfairy.com/event/nic-fanciulli-15aug2021/",
-		title: "nic fanciulli, special dinner, august 15th",
-		image: august_15,
+		url: "#",
+		title: "bottle of some drink and a glass",
+		image: deafult_img,
 	},
 	{
 		id: 2,
-		url: "https://www.ticketfairy.com/event/nic-fanciulli-15aug2021/",
-		title: "nic fanciulli, special dinner, august 15th",
-		image: august_15,
+		url: "#",
+		title: "bottle of some drink and a glass",
+		image: deafult_img,
 	},
 ];
 
