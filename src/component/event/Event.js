@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
-import deafult_img from "../../assets/slider/default.jpeg";
 import august_25 from "../../assets/slider/august_25.jpeg";
+import august_28 from "../../assets/slider/august_28.jpeg";
 
 // import { GrFormPrevious } from "react-icons/gr";
 import { FiChevronLeft } from "react-icons/fi";
@@ -28,14 +28,14 @@ function Event() {
 		}
 	}, [index, event]);
 
-	// useEffect(() => {
-	// 	let slider = setTimeout(() => {
-	// 		setIndex(index + 1);
-	// 	}, 4000);
-	// 	return () => {
-	// 		clearInterval(slider);
-	// 	};
-	// }, [index]);
+	useEffect(() => {
+		let slider = setTimeout(() => {
+			setIndex(index + 1);
+		}, 4000);
+		return () => {
+			clearInterval(slider);
+		};
+	}, [index]);
 
 	const handlePrevEvent = () => {
 		setIndex(index - 1);
@@ -60,13 +60,13 @@ function Event() {
 				return <Slide show={show} position={position} />;
 			})}
 
-			{/* <button className='slider_prevBtn' onClick={handlePrevEvent}>
+			<button className='slider_prevBtn' onClick={handlePrevEvent}>
 				<FiChevronLeft />
 			</button>
 
 			<button className='slider_nextBtn' onClick={handleNextEvent}>
 				<FiChevronRight />
-			</button> */}
+			</button>
 		</section>
 	);
 }
@@ -74,15 +74,15 @@ function Event() {
 const events = [
 	{
 		id: 1,
-		url: "#",
+		url: "https://www.eventbrite.com.mx/e/mystical-sunset-tickets-167620566627",
 		title: "august 25 event, mistycal sunset",
 		image: august_25,
 	},
 	{
 		id: 2,
-		url: "#",
+		url: "https://www.ticketfairy.com/event/francesca-lombardo-28aug2021/?pk=cd0c2ff489c65a3eb7f1836cfaefb35f5a68b0d75c1ddb8b72c3add29d138f8f",
 		title: "august 25 event, mistycal sunset",
-		image: august_25,
+		image: august_28,
 	},
 ];
 
