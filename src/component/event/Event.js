@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 
-// import august_11 from "../../assets/slider/august_11.jpeg";
-// import august_14 from "../../assets/slider/august_14.jpeg";
-// import august_15 from "../../assets/slider/august_15.jpeg";
 import deafult_img from "../../assets/slider/default.jpeg";
+import august_25 from "../../assets/slider/august_25.jpeg";
 
 // import { GrFormPrevious } from "react-icons/gr";
 import { FiChevronLeft } from "react-icons/fi";
@@ -77,14 +75,14 @@ const events = [
 	{
 		id: 1,
 		url: "#",
-		title: "bottle of some drink and a glass",
-		image: deafult_img,
+		title: "august 25 event, mistycal sunset",
+		image: august_25,
 	},
 	{
 		id: 2,
 		url: "#",
-		title: "bottle of some drink and a glass",
-		image: deafult_img,
+		title: "august 25 event, mistycal sunset",
+		image: august_25,
 	},
 ];
 
