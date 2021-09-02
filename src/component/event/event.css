@@ -81,7 +81,8 @@
 
 .slider_linkTitle {
 	position: absolute;
-	bottom: 150px;
+	bottom: 10px;
+	/* top: 20px; */
 	height: 30px;
 	width: 130px;
 	background: #ffffffc2;

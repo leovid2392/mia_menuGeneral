@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import september_05 from "../../assets/slider/september_05.jpeg";
+import september_02 from "../../assets/slider/september_02.jpeg";
 // import default_img from "../../assets/slider/default.jpeg";
 
 // import { GrFormPrevious } from "react-icons/gr";
@@ -28,14 +29,14 @@ function Event() {
 		}
 	}, [index, event]);
 
-	// useEffect(() => {
-	// 	let slider = setTimeout(() => {
-	// 		setIndex(index + 1);
-	// 	}, 4000);
-	// 	return () => {
-	// 		clearInterval(slider);
-	// 	};
-	// }, [index]);
+	useEffect(() => {
+		let slider = setTimeout(() => {
+			setIndex(index + 1);
+		}, 4000);
+		return () => {
+			clearInterval(slider);
+		};
+	}, [index]);
 
 	const handlePrevEvent = () => {
 		setIndex(index - 1);
@@ -60,13 +61,13 @@ function Event() {
 				return <Slide show={show} position={position} />;
 			})}
 
-			{/* <button className='slider_prevBtn' onClick={handlePrevEvent}>
+			<button className='slider_prevBtn' onClick={handlePrevEvent}>
 				<FiChevronLeft />
 			</button>
 
 			<button className='slider_nextBtn' onClick={handleNextEvent}>
 				<FiChevronRight />
-			</button> */}
+			</button>
 		</section>
 	);
 }
@@ -74,9 +75,9 @@ function Event() {
 const events = [
 	{
 		id: 1,
-		url: "https://www.ticketfairy.com/event/david-penn-5sep2021/",
-		title: "special dinner with david penn, golden hour",
-		image: september_05,
+		url: "https://www.eventbrite.com/e/entradas-mix-mag-session-tulum-169019595159",
+		title: "roderic, mehill mix mag mexico",
+		image: september_02,
 	},
 	{
 		id: 2,
