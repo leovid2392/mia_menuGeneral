@@ -78,12 +78,6 @@ function Event() {
 
 const events = [
 	{
-		id: 1,
-		url: "https://www.eventbrite.com/e/entradas-mix-mag-session-tulum-169019595159",
-		title: "roderic, mehill mix mag mexico",
-		image: september_02,
-	},
-	{
 		id: 2,
 		url: "https://www.ticketfairy.com/event/david-penn-5sep2021/",
 		title: "special dinner with david penn, golden hour",
