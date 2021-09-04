@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import september_02 from "../../assets/slider/september_02.jpeg";
 import september_05 from "../../assets/slider/september_05.jpeg";
+import september_08 from "../../assets/slider/september_08.jpeg";
 import september_10 from "../../assets/slider/september_10.jpeg";
 import september_12 from "../../assets/slider/september_12.jpeg";
 import september_16 from "../../assets/slider/september_16.jpeg";
@@ -36,7 +37,7 @@ function Event() {
 	useEffect(() => {
 		let slider = setTimeout(() => {
 			setIndex(index + 1);
-		}, 4000);
+		}, 5000);
 		return () => {
 			clearInterval(slider);
 		};
@@ -78,10 +79,16 @@ function Event() {
 
 const events = [
 	{
-		id: 2,
+		id: 1,
 		url: "https://www.ticketfairy.com/event/david-penn-5sep2021/",
 		title: "special dinner with david penn, golden hour",
 		image: september_05,
+	},
+	{
+		id: 2,
+		url: "https://www.ticketfairy.com/event/david-penn-5sep2021/",
+		title: "special dinner with david penn, golden hour",
+		image: september_08,
 	},
 	{
 		id: 3,
