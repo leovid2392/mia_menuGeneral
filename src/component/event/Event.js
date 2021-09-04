@@ -86,8 +86,8 @@ const events = [
 	},
 	{
 		id: 2,
-		url: "https://www.ticketfairy.com/event/david-penn-5sep2021/",
-		title: "special dinner with david penn, golden hour",
+		url: "https://www.eventbrite.com.mx/e/mystical-sunset-tickets-169651102013",
+		title: "mistycal sunset",
 		image: september_08,
 	},
 	{
